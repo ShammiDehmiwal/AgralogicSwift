@@ -1,0 +1,6 @@
+framework module Pods_AgraLogicSwift {
+  umbrella header "Pods-AgraLogicSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

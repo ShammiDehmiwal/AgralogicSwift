@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A22D555D1B8A57092273CAF /* Pods_AgraLogicSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8E9D6BE5FCB0985E3C3223 /* Pods_AgraLogicSwift.framework */; };
+		23F6059577A2723C5A5A87B6 /* Pods_AgraLogicSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3F5C74129E591BCD95F3D2 /* Pods_AgraLogicSwiftTests.framework */; };
+		ECC1304E36A512A46D2607A9 /* Pods_AgraLogicSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */; };
+		F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3B7227AB2210023BB4A /* AppDelegate.swift */; };
+		F948B3BD227AB2210023BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F948B3BB227AB2210023BB4A /* Main.storyboard */; };
+		F948B3C0227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */; };
+		F948B3C2227AB2220023BB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F948B3C1227AB2220023BB4A /* Assets.xcassets */; };
+		F948B3C5227AB2220023BB4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F948B3C3227AB2220023BB4A /* LaunchScreen.storyboard */; };
+		F948B3D0227AB2220023BB4A /* AgraLogicSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3CF227AB2220023BB4A /* AgraLogicSwiftTests.swift */; };
+		F948B3DB227AB2220023BB4A /* AgraLogicSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3DA227AB2220023BB4A /* AgraLogicSwiftUITests.swift */; };
+		F948B3F3227ABAE50023BB4A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3F2227ABAE50023BB4A /* LoginVC.swift */; };
+		F948B3F5227ABBC50023BB4A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3F4227ABBC50023BB4A /* Constant.swift */; };
+		F948B3FA227AC5AE0023BB4A /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3F9227AC5AE0023BB4A /* AccountVC.swift */; };
+		F948B3FC227AC9C20023BB4A /* SelectAccountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3FB227AC9C20023BB4A /* SelectAccountListCell.swift */; };
+		F948B401227ACC7D0023BB4A /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B400227ACC7D0023BB4A /* SplashVC.swift */; };
+		F948B407227ACEC90023BB4A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F948B403227ACEC90023BB4A /* MBProgressHUD.m */; };
+		F948B408227ACEC90023BB4A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F948B404227ACEC90023BB4A /* LICENSE */; };
+		F948B409227ACEC90023BB4A /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = F948B406227ACEC90023BB4A /* README.mdown */; };
+		F948B40C227AD94F0023BB4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F948B40B227AD94F0023BB4A /* CoreGraphics.framework */; };
+		F948B40E227ADAAD0023BB4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F948B40D227ADAAD0023BB4A /* QuartzCore.framework */; };
+		F948B419227AE5130023BB4A /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F948B411227AE5130023BB4A /* TSMessageView.m */; };
+		F948B41A227AE5130023BB4A /* TSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = F948B414227AE5130023BB4A /* TSBlurView.m */; };
+		F948B41C227AE5130023BB4A /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F948B417227AE5130023BB4A /* TSMessage.m */; };
+		F948B41F227AE62A0023BB4A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F948B41D227AE62A0023BB4A /* HexColors.m */; };
+		F948B424227AEBA80023BB4A /* CommonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B423227AEBA80023BB4A /* CommonApi.swift */; };
+		F948B426227AF1680023BB4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F948B425227AF1680023BB4A /* MobileCoreServices.framework */; };
+		F948B428227AF16E0023BB4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F948B427227AF16E0023BB4A /* SystemConfiguration.framework */; };
+		F948B42A227AF85D0023BB4A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B429227AF85D0023BB4A /* LoginPresenter.swift */; };
+		F948B42C227AFC070023BB4A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B42B227AFC070023BB4A /* Utility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F948B3CC227AB2220023BB4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F948B3AC227AB2210023BB4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F948B3B3227AB2210023BB4A;
+			remoteInfo = AgraLogicSwift;
+		};
+		F948B3D7227AB2220023BB4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F948B3AC227AB2210023BB4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F948B3B3227AB2210023BB4A;
+			remoteInfo = AgraLogicSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3558D0D7507E6780791AA6D3 /* Pods-AgraLogicSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBEB15B5074AB40B06D470E /* Pods-AgraLogicSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwift.debug.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8E9D6BE5FCB0985E3C3223 /* Pods_AgraLogicSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE3300C074DC7520589269C /* Pods-AgraLogicSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA75D44CCBF0D1A87AFF3E85 /* Pods-AgraLogicSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF4278472139A637B0096508 /* Pods-AgraLogicSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwift.release.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift.release.xcconfig"; sourceTree = "<group>"; };
+		E2E8ECD0BF09ACDA269AD176 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB3F5C74129E591BCD95F3D2 /* Pods_AgraLogicSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F948B3B4227AB2210023BB4A /* AgraLogicSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgraLogicSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F948B3B7227AB2210023BB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F948B3BC227AB2210023BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgraLogicSwift.xcdatamodel; sourceTree = "<group>"; };
+		F948B3C1227AB2220023BB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F948B3C4227AB2220023BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F948B3C6227AB2220023BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F948B3CB227AB2220023BB4A /* AgraLogicSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgraLogicSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F948B3CF227AB2220023BB4A /* AgraLogicSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgraLogicSwiftTests.swift; sourceTree = "<group>"; };
+		F948B3D1227AB2220023BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F948B3D6227AB2220023BB4A /* AgraLogicSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgraLogicSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F948B3DA227AB2220023BB4A /* AgraLogicSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgraLogicSwiftUITests.swift; sourceTree = "<group>"; };
+		F948B3DC227AB2220023BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F948B3F2227ABAE50023BB4A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F948B3F4227ABBC50023BB4A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F948B3F9227AC5AE0023BB4A /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		F948B3FB227AC9C20023BB4A /* SelectAccountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountListCell.swift; sourceTree = "<group>"; };
+		F948B400227ACC7D0023BB4A /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		F948B403227ACEC90023BB4A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F948B404227ACEC90023BB4A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F948B405227ACEC90023BB4A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F948B406227ACEC90023BB4A /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		F948B40A227ACF0E0023BB4A /* AgraLogicSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AgraLogicSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F948B40B227AD94F0023BB4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F948B40D227ADAAD0023BB4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F948B411227AE5130023BB4A /* TSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageView.m; sourceTree = "<group>"; };
+		F948B413227AE5130023BB4A /* TSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessage.h; sourceTree = "<group>"; };
+		F948B414227AE5130023BB4A /* TSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBlurView.m; sourceTree = "<group>"; };
+		F948B416227AE5130023BB4A /* TSMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessageView.h; sourceTree = "<group>"; };
+		F948B417227AE5130023BB4A /* TSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessage.m; sourceTree = "<group>"; };
+		F948B418227AE5130023BB4A /* TSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBlurView.h; sourceTree = "<group>"; };
+		F948B41D227AE62A0023BB4A /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		F948B41E227AE62A0023BB4A /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		F948B423227AEBA80023BB4A /* CommonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonApi.swift; sourceTree = "<group>"; };
+		F948B425227AF1680023BB4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F948B427227AF16E0023BB4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F948B429227AF85D0023BB4A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F948B42B227AFC070023BB4A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F948B3B1227AB2210023BB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F948B428227AF16E0023BB4A /* SystemConfiguration.framework in Frameworks */,
+				F948B426227AF1680023BB4A /* MobileCoreServices.framework in Frameworks */,
+				F948B40E227ADAAD0023BB4A /* QuartzCore.framework in Frameworks */,
+				F948B40C227AD94F0023BB4A /* CoreGraphics.framework in Frameworks */,
+				1A22D555D1B8A57092273CAF /* Pods_AgraLogicSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3C8227AB2220023BB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6059577A2723C5A5A87B6 /* Pods_AgraLogicSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3D3227AB2220023BB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC1304E36A512A46D2607A9 /* Pods_AgraLogicSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C9491E31E0788B484C13B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEB15B5074AB40B06D470E /* Pods-AgraLogicSwift.debug.xcconfig */,
+				DF4278472139A637B0096508 /* Pods-AgraLogicSwift.release.xcconfig */,
+				CA75D44CCBF0D1A87AFF3E85 /* Pods-AgraLogicSwiftTests.debug.xcconfig */,
+				3558D0D7507E6780791AA6D3 /* Pods-AgraLogicSwiftTests.release.xcconfig */,
+				E2E8ECD0BF09ACDA269AD176 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */,
+				7AE3300C074DC7520589269C /* Pods-AgraLogicSwiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E800C168E50D0BC18B83EA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F948B427227AF16E0023BB4A /* SystemConfiguration.framework */,
+				F948B425227AF1680023BB4A /* MobileCoreServices.framework */,
+				F948B40D227ADAAD0023BB4A /* QuartzCore.framework */,
+				F948B40B227AD94F0023BB4A /* CoreGraphics.framework */,
+				6E8E9D6BE5FCB0985E3C3223 /* Pods_AgraLogicSwift.framework */,
+				EB3F5C74129E591BCD95F3D2 /* Pods_AgraLogicSwiftTests.framework */,
+				38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F948B3AB227AB2210023BB4A = {
+			isa = PBXGroup;
+			children = (
+				F948B3B6227AB2210023BB4A /* AgraLogicSwift */,
+				F948B3CE227AB2220023BB4A /* AgraLogicSwiftTests */,
+				F948B3D9227AB2220023BB4A /* AgraLogicSwiftUITests */,
+				F948B3B5227AB2210023BB4A /* Products */,
+				0C9491E31E0788B484C13B22 /* Pods */,
+				9E800C168E50D0BC18B83EA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F948B3B5227AB2210023BB4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3B4227AB2210023BB4A /* AgraLogicSwift.app */,
+				F948B3CB227AB2220023BB4A /* AgraLogicSwiftTests.xctest */,
+				F948B3D6227AB2220023BB4A /* AgraLogicSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F948B3B6227AB2210023BB4A /* AgraLogicSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F948B420227AEAC30023BB4A /* Api */,
+				F948B3F1227AB9130023BB4A /* CoreData */,
+				F948B3F0227AB8CC0023BB4A /* SupportingFiles */,
+				F948B3EF227AB8CC0023BB4A /* ThirdParty */,
+				F948B3EA227AB7E30023BB4A /* app-modules */,
+				F948B3B7227AB2210023BB4A /* AppDelegate.swift */,
+				F948B3BB227AB2210023BB4A /* Main.storyboard */,
+				F948B3C1227AB2220023BB4A /* Assets.xcassets */,
+				F948B3C3227AB2220023BB4A /* LaunchScreen.storyboard */,
+			);
+			path = AgraLogicSwift;
+			sourceTree = "<group>";
+		};
+		F948B3CE227AB2220023BB4A /* AgraLogicSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3CF227AB2220023BB4A /* AgraLogicSwiftTests.swift */,
+				F948B3D1227AB2220023BB4A /* Info.plist */,
+			);
+			path = AgraLogicSwiftTests;
+			sourceTree = "<group>";
+		};
+		F948B3D9227AB2220023BB4A /* AgraLogicSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3DA227AB2220023BB4A /* AgraLogicSwiftUITests.swift */,
+				F948B3DC227AB2220023BB4A /* Info.plist */,
+			);
+			path = AgraLogicSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F948B3EA227AB7E30023BB4A /* app-modules */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3FD227ACC600023BB4A /* splash-module */,
+				F948B3F6227AC5910023BB4A /* account-module */,
+				F948B3EB227AB7E30023BB4A /* login-module */,
+				F948B3EE227AB7E30023BB4A /* common-utils */,
+			);
+			path = "app-modules";
+			sourceTree = "<group>";
+		};
+		F948B3EB227AB7E30023BB4A /* login-module */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3EC227AB7E30023BB4A /* presenter */,
+				F948B3ED227AB7E30023BB4A /* view */,
+			);
+			path = "login-module";
+			sourceTree = "<group>";
+		};
+		F948B3EC227AB7E30023BB4A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F948B429227AF85D0023BB4A /* LoginPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F948B3ED227AB7E30023BB4A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3F2227ABAE50023BB4A /* LoginVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F948B3EE227AB7E30023BB4A /* common-utils */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3F4227ABBC50023BB4A /* Constant.swift */,
+			);
+			path = "common-utils";
+			sourceTree = "<group>";
+		};
+		F948B3EF227AB8CC0023BB4A /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				F948B410227AE5130023BB4A /* TSMessage */,
+				F948B402227ACEC90023BB4A /* MBProgressHUD */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F948B3F0227AB8CC0023BB4A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3C6227AB2220023BB4A /* Info.plist */,
+				F948B40A227ACF0E0023BB4A /* AgraLogicSwift-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F948B3F1227AB9130023BB4A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F948B3F6227AC5910023BB4A /* account-module */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3F7227AC5910023BB4A /* presenter */,
+				F948B3F8227AC5910023BB4A /* view */,
+			);
+			path = "account-module";
+			sourceTree = "<group>";
+		};
+		F948B3F7227AC5910023BB4A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F948B3F8227AC5910023BB4A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3F9227AC5AE0023BB4A /* AccountVC.swift */,
+				F948B3FB227AC9C20023BB4A /* SelectAccountListCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F948B3FD227ACC600023BB4A /* splash-module */ = {
+			isa = PBXGroup;
+			children = (
+				F948B3FE227ACC600023BB4A /* presenter */,
+				F948B3FF227ACC600023BB4A /* view */,
+			);
+			path = "splash-module";
+			sourceTree = "<group>";
+		};
+		F948B3FE227ACC600023BB4A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F948B3FF227ACC600023BB4A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F948B400227ACC7D0023BB4A /* SplashVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F948B402227ACEC90023BB4A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F948B403227ACEC90023BB4A /* MBProgressHUD.m */,
+				F948B404227ACEC90023BB4A /* LICENSE */,
+				F948B405227ACEC90023BB4A /* MBProgressHUD.h */,
+				F948B406227ACEC90023BB4A /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F948B410227AE5130023BB4A /* TSMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F948B41E227AE62A0023BB4A /* HexColors.h */,
+				F948B41D227AE62A0023BB4A /* HexColors.m */,
+				F948B411227AE5130023BB4A /* TSMessageView.m */,
+				F948B413227AE5130023BB4A /* TSMessage.h */,
+				F948B414227AE5130023BB4A /* TSBlurView.m */,
+				F948B416227AE5130023BB4A /* TSMessageView.h */,
+				F948B417227AE5130023BB4A /* TSMessage.m */,
+				F948B418227AE5130023BB4A /* TSBlurView.h */,
+			);
+			path = TSMessage;
+			sourceTree = "<group>";
+		};
+		F948B420227AEAC30023BB4A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				F948B423227AEBA80023BB4A /* CommonApi.swift */,
+				F948B42B227AFC070023BB4A /* Utility.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F948B3B3227AB2210023BB4A /* AgraLogicSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F948B3DF227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwift" */;
+			buildPhases = (
+				3D14AD3C7206208BFC14E025 /* [CP] Check Pods Manifest.lock */,
+				F948B3B0227AB2210023BB4A /* Sources */,
+				F948B3B1227AB2210023BB4A /* Frameworks */,
+				F948B3B2227AB2210023BB4A /* Resources */,
+				46B1E6B388778F1E8F60EAD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgraLogicSwift;
+			productName = AgraLogicSwift;
+			productReference = F948B3B4227AB2210023BB4A /* AgraLogicSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F948B3CA227AB2220023BB4A /* AgraLogicSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F948B3E2227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwiftTests" */;
+			buildPhases = (
+				7186687AC947032AEB425A12 /* [CP] Check Pods Manifest.lock */,
+				F948B3C7227AB2220023BB4A /* Sources */,
+				F948B3C8227AB2220023BB4A /* Frameworks */,
+				F948B3C9227AB2220023BB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F948B3CD227AB2220023BB4A /* PBXTargetDependency */,
+			);
+			name = AgraLogicSwiftTests;
+			productName = AgraLogicSwiftTests;
+			productReference = F948B3CB227AB2220023BB4A /* AgraLogicSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F948B3D5227AB2220023BB4A /* AgraLogicSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F948B3E5227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwiftUITests" */;
+			buildPhases = (
+				5FBF6E495B8DBEA0E57733A8 /* [CP] Check Pods Manifest.lock */,
+				F948B3D2227AB2220023BB4A /* Sources */,
+				F948B3D3227AB2220023BB4A /* Frameworks */,
+				F948B3D4227AB2220023BB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F948B3D8227AB2220023BB4A /* PBXTargetDependency */,
+			);
+			name = AgraLogicSwiftUITests;
+			productName = AgraLogicSwiftUITests;
+			productReference = F948B3D6227AB2220023BB4A /* AgraLogicSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F948B3AC227AB2210023BB4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = RNaura;
+				TargetAttributes = {
+					F948B3B3227AB2210023BB4A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F948B3CA227AB2220023BB4A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F948B3B3227AB2210023BB4A;
+					};
+					F948B3D5227AB2220023BB4A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F948B3B3227AB2210023BB4A;
+					};
+				};
+			};
+			buildConfigurationList = F948B3AF227AB2210023BB4A /* Build configuration list for PBXProject "AgraLogicSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F948B3AB227AB2210023BB4A;
+			productRefGroup = F948B3B5227AB2210023BB4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F948B3B3227AB2210023BB4A /* AgraLogicSwift */,
+				F948B3CA227AB2220023BB4A /* AgraLogicSwiftTests */,
+				F948B3D5227AB2220023BB4A /* AgraLogicSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F948B3B2227AB2210023BB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F948B3C5227AB2220023BB4A /* LaunchScreen.storyboard in Resources */,
+				F948B3C2227AB2220023BB4A /* Assets.xcassets in Resources */,
+				F948B408227ACEC90023BB4A /* LICENSE in Resources */,
+				F948B3BD227AB2210023BB4A /* Main.storyboard in Resources */,
+				F948B409227ACEC90023BB4A /* README.mdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3C9227AB2220023BB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3D4227AB2220023BB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D14AD3C7206208BFC14E025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgraLogicSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B1E6B388778F1E8F60EAD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBF6E495B8DBEA0E57733A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgraLogicSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7186687AC947032AEB425A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgraLogicSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F948B3B0227AB2210023BB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F948B3C0227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld in Sources */,
+				F948B3FA227AC5AE0023BB4A /* AccountVC.swift in Sources */,
+				F948B42A227AF85D0023BB4A /* LoginPresenter.swift in Sources */,
+				F948B3FC227AC9C20023BB4A /* SelectAccountListCell.swift in Sources */,
+				F948B419227AE5130023BB4A /* TSMessageView.m in Sources */,
+				F948B42C227AFC070023BB4A /* Utility.swift in Sources */,
+				F948B407227ACEC90023BB4A /* MBProgressHUD.m in Sources */,
+				F948B3F5227ABBC50023BB4A /* Constant.swift in Sources */,
+				F948B41C227AE5130023BB4A /* TSMessage.m in Sources */,
+				F948B41A227AE5130023BB4A /* TSBlurView.m in Sources */,
+				F948B401227ACC7D0023BB4A /* SplashVC.swift in Sources */,
+				F948B41F227AE62A0023BB4A /* HexColors.m in Sources */,
+				F948B424227AEBA80023BB4A /* CommonApi.swift in Sources */,
+				F948B3F3227ABAE50023BB4A /* LoginVC.swift in Sources */,
+				F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3C7227AB2220023BB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F948B3D0227AB2220023BB4A /* AgraLogicSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F948B3D2227AB2220023BB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F948B3DB227AB2220023BB4A /* AgraLogicSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F948B3CD227AB2220023BB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F948B3B3227AB2210023BB4A /* AgraLogicSwift */;
+			targetProxy = F948B3CC227AB2220023BB4A /* PBXContainerItemProxy */;
+		};
+		F948B3D8227AB2220023BB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F948B3B3227AB2210023BB4A /* AgraLogicSwift */;
+			targetProxy = F948B3D7227AB2220023BB4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F948B3BB227AB2210023BB4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F948B3BC227AB2210023BB4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F948B3C3227AB2220023BB4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F948B3C4227AB2220023BB4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F948B3DD227AB2220023BB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rnauraservices/Desktop/Shammi/TestMyGitProjects/AgralogicSwift/AgraLogicSwift/SupportingFiles/AgraLogicSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F948B3DE227AB2220023BB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rnauraservices/Desktop/Shammi/TestMyGitProjects/AgralogicSwift/AgraLogicSwift/SupportingFiles/AgraLogicSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F948B3E0227AB2220023BB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBEB15B5074AB40B06D470E /* Pods-AgraLogicSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/AgraLogicSwift/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rnauraservices/Desktop/Shammi/TestMyGitProjects/AgralogicSwift/AgraLogicSwift/SupportingFiles/AgraLogicSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F948B3E1227AB2220023BB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4278472139A637B0096508 /* Pods-AgraLogicSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/AgraLogicSwift/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rnauraservices/Desktop/Shammi/TestMyGitProjects/AgralogicSwift/AgraLogicSwift/SupportingFiles/AgraLogicSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F948B3E3227AB2220023BB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA75D44CCBF0D1A87AFF3E85 /* Pods-AgraLogicSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgraLogicSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgraLogicSwift.app/AgraLogicSwift";
+			};
+			name = Debug;
+		};
+		F948B3E4227AB2220023BB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3558D0D7507E6780791AA6D3 /* Pods-AgraLogicSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgraLogicSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgraLogicSwift.app/AgraLogicSwift";
+			};
+			name = Release;
+		};
+		F948B3E6227AB2220023BB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E8ECD0BF09ACDA269AD176 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgraLogicSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgraLogicSwift;
+			};
+			name = Debug;
+		};
+		F948B3E7227AB2220023BB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE3300C074DC7520589269C /* Pods-AgraLogicSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgraLogicSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RNaura.com.AgraLogicSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgraLogicSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F948B3AF227AB2210023BB4A /* Build configuration list for PBXProject "AgraLogicSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F948B3DD227AB2220023BB4A /* Debug */,
+				F948B3DE227AB2220023BB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F948B3DF227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F948B3E0227AB2220023BB4A /* Debug */,
+				F948B3E1227AB2220023BB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F948B3E2227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F948B3E3227AB2220023BB4A /* Debug */,
+				F948B3E4227AB2220023BB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F948B3E5227AB2220023BB4A /* Build configuration list for PBXNativeTarget "AgraLogicSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F948B3E6227AB2220023BB4A /* Debug */,
+				F948B3E7227AB2220023BB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */,
+			);
+			currentVersion = F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */;
+			path = AgraLogicSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F948B3AC227AB2210023BB4A /* Project object */;
+}

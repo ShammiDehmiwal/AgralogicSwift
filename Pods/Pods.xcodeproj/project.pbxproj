@@ -1,0 +1,1482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026723B70D2877DE24C874F469E4A623 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C003AA07784409B9F3BDDB7DAC0464FD /* QuartzCore.framework */; };
+		0F45029ACA8239648CCF7B05C6B11983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		108CD8A82F7CFC6F57237498B060F0E8 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDAF5E02AF42B78A8D5B38EFC54B17 /* IQKeyboardManagerConstants.swift */; };
+		14ECF6E40B0356170FEDE170B2EB6F2F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4053B85D2D620A725EDD88D0C7E1925 /* Request.swift */; };
+		1B816D0DA8D50AA177803295CE15D264 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140460C7DEFD332C02D5B95016C8CED /* IQUITextFieldView+Additions.swift */; };
+		31978BB205ADDA641BC831D94B5F9701 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB7042445B2A66FBE52012484BEE854 /* UIKit.framework */; };
+		3615A32D72BDEE6F70F6F1E258739D89 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC613B98A371C10E4699B7AD1F1C52F /* IQNSArray+Sort.swift */; };
+		3A07BEE50C7847C37762F525587F84CC /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6759F673DDABA7B808A6BCB1FEDD697E /* IQUIView+Hierarchy.swift */; };
+		3BD1DAFE1F3E6C9E4EB0F2099B6D6FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		4920AD2B3D668DB550BEDED6747F925B /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2677A3024ED5FE80768C116836B7D3 /* ServerTrustPolicy.swift */; };
+		4B39E0A2E43F16029A84168D30541CA2 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCB431A5D82C09A4F13FE091ED64DF /* IQKeyboardManagerSwift-dummy.m */; };
+		505B75241DCEA8C1FBF9F479C2DDEF31 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB158EC9734C6B86A94B96C7DE9E3A /* Timeline.swift */; };
+		559368DD6966DB1193B3FD6E7CBF5FED /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED0066B57AEC42C27984D1AEE4DCB2 /* Alamofire-dummy.m */; };
+		5677C54BF14ABA45675F2DEB98AFD0D1 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D1FE9D10D28A026A326F853479E2085 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594494BAB3E029862D7009DE60FCC904 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE05C05CB4B5334AF896C8C213AB22 /* TaskDelegate.swift */; };
+		5A3FDED6B7ED8DFCEFC970E22D821654 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54B8F51B4E96E49C2503A7D48DFDE6 /* IQKeyboardManager.swift */; };
+		5B1086B0A866704A6CAF72B5A47582C6 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B199EA5B7C19E9DD6391725AA179 /* Alamofire.swift */; };
+		5C2F9E5485166B59DD032D7DF4C29CF0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875433AC146670C5907B6A11C1845C82 /* Response.swift */; };
+		62DEB99B645FC18DF60E0E62FA8770CB /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9A1E4465A04A396B63E095F24E307 /* IQToolbar.swift */; };
+		7047D5F1E61B2E333787126E08C5F8E6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168088FA8F05D3A50BD9657DAC7B3BF0 /* CoreTelephony.framework */; };
+		719465AD4CF623E2FB29272EF9207673 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A15A2E521722B571A54ECC000452E43 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72C2F0877FAB758F102C1D5FB6641559 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D47FC90A3548D9C06266877FDFCBB /* NetworkReachabilityManager.swift */; };
+		73F4AD16C2B1309E112A44E0EAEBADE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		75D952736C240CA7CB20C449D7E7FAB4 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28D97F5F498532B0D4518989C71122 /* IQPreviousNextView.swift */; };
+		79A8C6859CEE62AC3C4DEB2180D74A3C /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FDAD7CE9C9F70767EBE6A2971DD20 /* IQBarButtonItem.swift */; };
+		7C92C8E65C1DA9C0C864D6DCBA207F45 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F83C806FBEEBB6636A702CBB8C8731AC /* ReachabilitySwift-dummy.m */; };
+		7F2C37635B13BD13496CD6E160E77473 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA4550B166D262C8777E6709E8E35F /* IQInvocation.swift */; };
+		84AAA219A9C8E0A431ECA066E3CADC2B /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC6691EEE958EC84DE76C33B2C758A /* IQKeyboardManagerConstantsInternal.swift */; };
+		84DF7FD988870D75E818E4558D17A070 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0FE1A616BA369D0B8A406A279870F /* Reachability.swift */; };
+		85B317AA0C11122F35402B8E227EF8C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		864F037752C78D01A74AF740E3D9409B /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28623E193A8CFD7C539A601C53275CFE /* IQTitleBarButtonItem.swift */; };
+		8787A1DE6A3C0A4BCE385C8BFD7C53B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		8D0A78526FF7EFD33E4808281A26A115 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F79292475DCD2D69D115D7D83ABBD7 /* IQTextView.swift */; };
+		99AF8993A477CE9510711B7111F09B3E /* Pods-AgraLogicSwiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B621D420E2BE0C0530318069D23B11 /* Pods-AgraLogicSwiftUITests-dummy.m */; };
+		A33530452C800132C869C9D50E8C51F4 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA98E0C2BF01204FFAA59D625A2874 /* IQKeyboardReturnKeyHandler.swift */; };
+		A5ADEF55257E4C1A482BF072C205F388 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D6313A6366F447977E3E7E1E5EAB83 /* ParameterEncoding.swift */; };
+		A6FD67030A362813EBF7BC9749C55CDB /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B2DC2F10420F7EDA41B956C7EF292 /* IQUIScrollView+Additions.swift */; };
+		ABAEB9DEE3CE05729A9442CFA1988407 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54FC2165614C2D2EA4A9300C45134B /* SessionManager.swift */; };
+		ADB18D94C4F71AE2FCE388100D556B0F /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB260E1AEFC94C0A7A9B3637A450D6 /* ResponseSerialization.swift */; };
+		AF0D7B7D06E19680CD3F4BE491945B4E /* Pods-AgraLogicSwiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA7FF5A54EC8458C9A87BAEB09E2F3F /* Pods-AgraLogicSwiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B082FA7223428C8DE32F7DE7F5AF441C /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF888491A87BBC371FBDC4D9F0043B60 /* AFError.swift */; };
+		B178B38FCD7F99B07422484FC7FD6861 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 553D83CC77157D2B0D8794E1986CFA14 /* IQKeyboardManager.bundle */; };
+		B2E54789768E4F4EE35F11E0034C7383 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABED464712DE01970515AFF5FC8F5B7 /* Notifications.swift */; };
+		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4902507F968A4FC29AFE976A2A8599CF /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F23C51ACD21A1C529355763A52AC60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF10D46FF29F12C46E13CD126BC088D8 /* CoreGraphics.framework */; };
+		BC42EBB0E0F810A3F50EE76871C95DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */; };
+		C5C5BF880D88A7E52F4DCB140AB7B846 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083A549582058B69688415A4C734CA8A /* IQUIView+IQKeyboardToolbar.swift */; };
+		C6685FCC01B832095FF40B66229275FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211228E7BB203160CEC18618832DB3 /* SystemConfiguration.framework */; };
+		C84B862C309A2659959448EE2448246E /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF413903AE75A9EB6E1AF489581B29A7 /* IQUIViewController+Additions.swift */; };
+		D2B384893454A891D32CB20A53E4EDAF /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4C8A7D2EFBA4CE0CEDFB38DEBAFF8 /* DispatchQueue+Alamofire.swift */; };
+		D583829CA1D3C6B9B8F5C085B1D597EF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88AE36E5844F088070DB4A81AE461DF /* Validation.swift */; };
+		E29D04C4D2DF256F4FEE65424989111F /* Pods-AgraLogicSwiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C78D7E93B1B91243BEE14173C4A1A67 /* Pods-AgraLogicSwiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5BCAAD6DE1930443DBAD963A184DFC8 /* Pods-AgraLogicSwiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10086C30D426B892732D5CE8280D3D /* Pods-AgraLogicSwiftTests-dummy.m */; };
+		E7BA58DE1AA8F11BAA7E8817D8AB509C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6490223C908391CA2B9C9F580C9D7B /* Result.swift */; };
+		E7D11E828CECEE7E252B4F978616583C /* Pods-AgraLogicSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63DB2328678A9918122C77D64606EEC5 /* Pods-AgraLogicSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED31BC4787BB184F7B86CC38F7198D48 /* Pods-AgraLogicSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E63A66E58714F85D11BAF79150115 /* Pods-AgraLogicSwift-dummy.m */; };
+		F4D82D78C14BF258042CDA3C1B15B7E1 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1C932B55B14E29D51DFBD0E2DA3D6 /* MultipartFormData.swift */; };
+		FFB9BA683C701138C08A211F3E192F56 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9882E43743AAB86A78E3F5659E6B3E /* SessionDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B60C94E2ECA7C839EA0751033297449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		C008C772C3F8C2AA9582CF3EF59140E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056B209563983D6540AAA8FC22142487;
+			remoteInfo = "Pods-AgraLogicSwift";
+		};
+		C236BA6B0F865F0A1840F90DCC40710A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		C44340F963E6A95A15A64390905174C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		D97C1EE15D424F67D285F76584AD0635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056B209563983D6540AAA8FC22142487;
+			remoteInfo = "Pods-AgraLogicSwift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06AE05C05CB4B5334AF896C8C213AB22 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		0796B13D7C24A377A75E2E8FC2C8C8BF /* Pods-AgraLogicSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		083A549582058B69688415A4C734CA8A /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		0F6490223C908391CA2B9C9F580C9D7B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		136D3BA233304D7EBF3D2432165346CB /* Pods-AgraLogicSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AgraLogicSwift-frameworks.sh"; sourceTree = "<group>"; };
+		168088FA8F05D3A50BD9657DAC7B3BF0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		19C631CE47AE521C5AE531FDA98CCB05 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		1A15A2E521722B571A54ECC000452E43 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		1ABBF29F605F36A1807171151FD9D6DB /* Pods_AgraLogicSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB7042445B2A66FBE52012484BEE854 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1C3F28849E54FF3CCC791BB9EC2C0F3D /* Pods-AgraLogicSwiftUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwiftUITests-Info.plist"; sourceTree = "<group>"; };
+		2043F46D070ADCF0808EACCA3F4FA5B2 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AC4ABCFBD1DB586EF1F019D49E21F6 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25CB907D83BFE6A3D217DDA880EB05B9 /* Pods-AgraLogicSwiftTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwiftTests-Info.plist"; sourceTree = "<group>"; };
+		26B0FE1A616BA369D0B8A406A279870F /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		28623E193A8CFD7C539A601C53275CFE /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		2B9E63A66E58714F85D11BAF79150115 /* Pods-AgraLogicSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AgraLogicSwift-dummy.m"; sourceTree = "<group>"; };
+		2BA7FF5A54EC8458C9A87BAEB09E2F3F /* Pods-AgraLogicSwiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AgraLogicSwiftTests-umbrella.h"; sourceTree = "<group>"; };
+		2D1FE9D10D28A026A326F853479E2085 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		2E8885E02D0262A8E17BBAF421E902C4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F71C3974DC01BFE8914835E4D4937BB /* Pods-AgraLogicSwiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		34A101E9A0D8D359D52607649ECEDD1C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		35211228E7BB203160CEC18618832DB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		3C3161D5CF11742774966F781E09F948 /* Pods_AgraLogicSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C78D7E93B1B91243BEE14173C4A1A67 /* Pods-AgraLogicSwiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AgraLogicSwiftUITests-umbrella.h"; sourceTree = "<group>"; };
+		3F28D97F5F498532B0D4518989C71122 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		3FBCB431A5D82C09A4F13FE091ED64DF /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		4358A4FAC92C9BE52FE09EFF8D144AB4 /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		4902507F968A4FC29AFE976A2A8599CF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		4B54B8F51B4E96E49C2503A7D48DFDE6 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		4FFDAF5E02AF42B78A8D5B38EFC54B17 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		54CA98E0C2BF01204FFAA59D625A2874 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		553D83CC77157D2B0D8794E1986CFA14 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		5AC0CF1A9049E7F5CFE150F997342A54 /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		5D2677A3024ED5FE80768C116836B7D3 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		60E9A1E4465A04A396B63E095F24E307 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		6140460C7DEFD332C02D5B95016C8CED /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		63DB2328678A9918122C77D64606EEC5 /* Pods-AgraLogicSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AgraLogicSwift-umbrella.h"; sourceTree = "<group>"; };
+		646516C917D0EC15688DACA27EA577BA /* Pods-AgraLogicSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65AC6691EEE958EC84DE76C33B2C758A /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		6759F673DDABA7B808A6BCB1FEDD697E /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		69F4C8A7D2EFBA4CE0CEDFB38DEBAFF8 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		6ABED464712DE01970515AFF5FC8F5B7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		6DD012FC7582935BD63B8936641C484B /* Pods-AgraLogicSwiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AgraLogicSwiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72D6313A6366F447977E3E7E1E5EAB83 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		7339D0D21905B8A774D6BDA927DBE116 /* Pods-AgraLogicSwiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		74F79292475DCD2D69D115D7D83ABBD7 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		77EB260E1AEFC94C0A7A9B3637A450D6 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		7865EC13C80737FC1B1805FC17E87828 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		79A0E69E9BED94072C76CAD554B2E13D /* Pods-AgraLogicSwiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AgraLogicSwiftUITests.modulemap"; sourceTree = "<group>"; };
+		7B54FC2165614C2D2EA4A9300C45134B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		7D9882E43743AAB86A78E3F5659E6B3E /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		875433AC146670C5907B6A11C1845C82 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		87F554C7A9E6DBBAC3922835CCD30812 /* Pods-AgraLogicSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwift-Info.plist"; sourceTree = "<group>"; };
+		8A0FDAD7CE9C9F70767EBE6A2971DD20 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		8B1812CBD28448B53BC8676A1323A0BA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		8D9B2E46FB0AB23D9933624DD2A481DF /* Pods-AgraLogicSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AgraLogicSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		9110C394653EA0CA359CAD08CB807610 /* Pods-AgraLogicSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		91B621D420E2BE0C0530318069D23B11 /* Pods-AgraLogicSwiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AgraLogicSwiftUITests-dummy.m"; sourceTree = "<group>"; };
+		9364151A67EEAA82D2DE7C79A45036A2 /* Pods-AgraLogicSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9749968B85016B7B2DE331EDECF5A991 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		98ED0066B57AEC42C27984D1AEE4DCB2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		98FA4550B166D262C8777E6709E8E35F /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		9AA353F58BC525C5C64DB04631084FA1 /* Pods-AgraLogicSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AgraLogicSwift.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A37D47FC90A3548D9C06266877FDFCBB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		A5C1C932B55B14E29D51DFBD0E2DA3D6 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		A88AE36E5844F088070DB4A81AE461DF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		AA18C60C27F10844EB18E078D864E6A7 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		AD10086C30D426B892732D5CE8280D3D /* Pods-AgraLogicSwiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AgraLogicSwiftTests-dummy.m"; sourceTree = "<group>"; };
+		B57B2DC2F10420F7EDA41B956C7EF292 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		C003AA07784409B9F3BDDB7DAC0464FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CA2DA685A038AD277B8540F8EBA32390 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D61B47E30CB7E5AFB56C44CD6CAEEE59 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		DA49F6B4B770DC4D77A6489A43B0ACB2 /* Pods-AgraLogicSwiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AgraLogicSwiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2AB158EC9734C6B86A94B96C7DE9E3A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		E45E8B29D8F2CABDAB12DB11276AB069 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		E5340B8D326257B994A0A7DBDA18A99B /* Pods-AgraLogicSwiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AgraLogicSwiftTests.modulemap"; sourceTree = "<group>"; };
+		EA7F3AF2765E82F046CF66FD7C0A893E /* Pods-AgraLogicSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AgraLogicSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBC613B98A371C10E4699B7AD1F1C52F /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		EF10D46FF29F12C46E13CD126BC088D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		EF413903AE75A9EB6E1AF489581B29A7 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		F1660535E4A15028044FB04C3E5510D3 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		F1E0B199EA5B7C19E9DD6391725AA179 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F4053B85D2D620A725EDD88D0C7E1925 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		F5897514BD0F420DA08D0F8E620889DE /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		F5B86A7C809C75A255F6F713858D8B2C /* Pods_AgraLogicSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83C806FBEEBB6636A702CBB8C8731AC /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		FC26C7DD6D0C7F787F89B940A8B386D5 /* Pods-AgraLogicSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AgraLogicSwift.modulemap"; sourceTree = "<group>"; };
+		FF888491A87BBC371FBDC4D9F0043B60 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BCC765CA7E5612D4DD58BE9EE6BA3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F23C51ACD21A1C529355763A52AC60 /* CoreGraphics.framework in Frameworks */,
+				8787A1DE6A3C0A4BCE385C8BFD7C53B0 /* Foundation.framework in Frameworks */,
+				026723B70D2877DE24C874F469E4A623 /* QuartzCore.framework in Frameworks */,
+				31978BB205ADDA641BC831D94B5F9701 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32527AA64370A7D02DA57C80279A40F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7047D5F1E61B2E333787126E08C5F8E6 /* CoreTelephony.framework in Frameworks */,
+				73F4AD16C2B1309E112A44E0EAEBADE2 /* Foundation.framework in Frameworks */,
+				C6685FCC01B832095FF40B66229275FD /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF53A23A9DC686AEB4F4CEF2C5A034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC42EBB0E0F810A3F50EE76871C95DD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F10D96B45919F4E7E9482D3BB39E98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B317AA0C11122F35402B8E227EF8C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD1DAFE1F3E6C9E4EB0F2099B6D6FA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F386BED8DC386FBC82F4C44C67040ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F45029ACA8239648CCF7B05C6B11983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1029D2E00DF6C6270F9C113AE99C4F4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208525187F736C6C37ACF6B42D12A98A /* Alamofire */,
+				8280A1F516828D1AE1F72A48EB6CA5EF /* IQKeyboardManagerSwift */,
+				21AFAD77E7302BD2C03369B814B1F7D1 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1A8B5104D85466982E333009C1BE099C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E8885E02D0262A8E17BBAF421E902C4 /* Alamofire.framework */,
+				CA2DA685A038AD277B8540F8EBA32390 /* IQKeyboardManagerSwift.framework */,
+				1ABBF29F605F36A1807171151FD9D6DB /* Pods_AgraLogicSwift.framework */,
+				3C3161D5CF11742774966F781E09F948 /* Pods_AgraLogicSwiftTests.framework */,
+				F5B86A7C809C75A255F6F713858D8B2C /* Pods_AgraLogicSwiftUITests.framework */,
+				2043F46D070ADCF0808EACCA3F4FA5B2 /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		208525187F736C6C37ACF6B42D12A98A /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				FF888491A87BBC371FBDC4D9F0043B60 /* AFError.swift */,
+				F1E0B199EA5B7C19E9DD6391725AA179 /* Alamofire.swift */,
+				69F4C8A7D2EFBA4CE0CEDFB38DEBAFF8 /* DispatchQueue+Alamofire.swift */,
+				A5C1C932B55B14E29D51DFBD0E2DA3D6 /* MultipartFormData.swift */,
+				A37D47FC90A3548D9C06266877FDFCBB /* NetworkReachabilityManager.swift */,
+				6ABED464712DE01970515AFF5FC8F5B7 /* Notifications.swift */,
+				72D6313A6366F447977E3E7E1E5EAB83 /* ParameterEncoding.swift */,
+				F4053B85D2D620A725EDD88D0C7E1925 /* Request.swift */,
+				875433AC146670C5907B6A11C1845C82 /* Response.swift */,
+				77EB260E1AEFC94C0A7A9B3637A450D6 /* ResponseSerialization.swift */,
+				0F6490223C908391CA2B9C9F580C9D7B /* Result.swift */,
+				5D2677A3024ED5FE80768C116836B7D3 /* ServerTrustPolicy.swift */,
+				7D9882E43743AAB86A78E3F5659E6B3E /* SessionDelegate.swift */,
+				7B54FC2165614C2D2EA4A9300C45134B /* SessionManager.swift */,
+				06AE05C05CB4B5334AF896C8C213AB22 /* TaskDelegate.swift */,
+				E2AB158EC9734C6B86A94B96C7DE9E3A /* Timeline.swift */,
+				A88AE36E5844F088070DB4A81AE461DF /* Validation.swift */,
+				9E924058D91E86F67D33DFF8AFD142D4 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		21AFAD77E7302BD2C03369B814B1F7D1 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				26B0FE1A616BA369D0B8A406A279870F /* Reachability.swift */,
+				3F31EC5A01816369A5965D260343825A /* Support Files */,
+			);
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		317A8A1F18D6C9B50D79F5FA7A1893AA /* Pods-AgraLogicSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FC26C7DD6D0C7F787F89B940A8B386D5 /* Pods-AgraLogicSwift.modulemap */,
+				EA7F3AF2765E82F046CF66FD7C0A893E /* Pods-AgraLogicSwift-acknowledgements.markdown */,
+				8D9B2E46FB0AB23D9933624DD2A481DF /* Pods-AgraLogicSwift-acknowledgements.plist */,
+				2B9E63A66E58714F85D11BAF79150115 /* Pods-AgraLogicSwift-dummy.m */,
+				136D3BA233304D7EBF3D2432165346CB /* Pods-AgraLogicSwift-frameworks.sh */,
+				87F554C7A9E6DBBAC3922835CCD30812 /* Pods-AgraLogicSwift-Info.plist */,
+				63DB2328678A9918122C77D64606EEC5 /* Pods-AgraLogicSwift-umbrella.h */,
+				9110C394653EA0CA359CAD08CB807610 /* Pods-AgraLogicSwift.debug.xcconfig */,
+				9AA353F58BC525C5C64DB04631084FA1 /* Pods-AgraLogicSwift.release.xcconfig */,
+			);
+			name = "Pods-AgraLogicSwift";
+			path = "Target Support Files/Pods-AgraLogicSwift";
+			sourceTree = "<group>";
+		};
+		3F31EC5A01816369A5965D260343825A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5897514BD0F420DA08D0F8E620889DE /* ReachabilitySwift.modulemap */,
+				F1660535E4A15028044FB04C3E5510D3 /* ReachabilitySwift.xcconfig */,
+				F83C806FBEEBB6636A702CBB8C8731AC /* ReachabilitySwift-dummy.m */,
+				5AC0CF1A9049E7F5CFE150F997342A54 /* ReachabilitySwift-Info.plist */,
+				AA18C60C27F10844EB18E078D864E6A7 /* ReachabilitySwift-prefix.pch */,
+				1A15A2E521722B571A54ECC000452E43 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		49C2CD111913B38590C6862EB9043F48 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				317A8A1F18D6C9B50D79F5FA7A1893AA /* Pods-AgraLogicSwift */,
+				F456EFA415428B8E6420D4C0728D2FB7 /* Pods-AgraLogicSwiftTests */,
+				F99A3C42F2F0CB70E43587F1F47F7667 /* Pods-AgraLogicSwiftUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8280A1F516828D1AE1F72A48EB6CA5EF /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FDAD7CE9C9F70767EBE6A2971DD20 /* IQBarButtonItem.swift */,
+				98FA4550B166D262C8777E6709E8E35F /* IQInvocation.swift */,
+				4B54B8F51B4E96E49C2503A7D48DFDE6 /* IQKeyboardManager.swift */,
+				4FFDAF5E02AF42B78A8D5B38EFC54B17 /* IQKeyboardManagerConstants.swift */,
+				65AC6691EEE958EC84DE76C33B2C758A /* IQKeyboardManagerConstantsInternal.swift */,
+				54CA98E0C2BF01204FFAA59D625A2874 /* IQKeyboardReturnKeyHandler.swift */,
+				EBC613B98A371C10E4699B7AD1F1C52F /* IQNSArray+Sort.swift */,
+				3F28D97F5F498532B0D4518989C71122 /* IQPreviousNextView.swift */,
+				74F79292475DCD2D69D115D7D83ABBD7 /* IQTextView.swift */,
+				28623E193A8CFD7C539A601C53275CFE /* IQTitleBarButtonItem.swift */,
+				60E9A1E4465A04A396B63E095F24E307 /* IQToolbar.swift */,
+				B57B2DC2F10420F7EDA41B956C7EF292 /* IQUIScrollView+Additions.swift */,
+				6140460C7DEFD332C02D5B95016C8CED /* IQUITextFieldView+Additions.swift */,
+				6759F673DDABA7B808A6BCB1FEDD697E /* IQUIView+Hierarchy.swift */,
+				083A549582058B69688415A4C734CA8A /* IQUIView+IQKeyboardToolbar.swift */,
+				EF413903AE75A9EB6E1AF489581B29A7 /* IQUIViewController+Additions.swift */,
+				90AE78C9A314E649E848C669985E05E4 /* Resources */,
+				8861D9248F1DFF916EB996850B09A981 /* Support Files */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		8861D9248F1DFF916EB996850B09A981 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E45E8B29D8F2CABDAB12DB11276AB069 /* IQKeyboardManagerSwift.modulemap */,
+				7865EC13C80737FC1B1805FC17E87828 /* IQKeyboardManagerSwift.xcconfig */,
+				3FBCB431A5D82C09A4F13FE091ED64DF /* IQKeyboardManagerSwift-dummy.m */,
+				4358A4FAC92C9BE52FE09EFF8D144AB4 /* IQKeyboardManagerSwift-Info.plist */,
+				D61B47E30CB7E5AFB56C44CD6CAEEE59 /* IQKeyboardManagerSwift-prefix.pch */,
+				2D1FE9D10D28A026A326F853479E2085 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		90AE78C9A314E649E848C669985E05E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				553D83CC77157D2B0D8794E1986CFA14 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9E924058D91E86F67D33DFF8AFD142D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B1812CBD28448B53BC8676A1323A0BA /* Alamofire.modulemap */,
+				9749968B85016B7B2DE331EDECF5A991 /* Alamofire.xcconfig */,
+				98ED0066B57AEC42C27984D1AEE4DCB2 /* Alamofire-dummy.m */,
+				19C631CE47AE521C5AE531FDA98CCB05 /* Alamofire-Info.plist */,
+				34A101E9A0D8D359D52607649ECEDD1C /* Alamofire-prefix.pch */,
+				4902507F968A4FC29AFE976A2A8599CF /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */,
+				1029D2E00DF6C6270F9C113AE99C4F4F /* Pods */,
+				1A8B5104D85466982E333009C1BE099C /* Products */,
+				49C2CD111913B38590C6862EB9043F48 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F820A329FB9B3597D8692BB799A4BA89 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F456EFA415428B8E6420D4C0728D2FB7 /* Pods-AgraLogicSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5340B8D326257B994A0A7DBDA18A99B /* Pods-AgraLogicSwiftTests.modulemap */,
+				6DD012FC7582935BD63B8936641C484B /* Pods-AgraLogicSwiftTests-acknowledgements.markdown */,
+				2F71C3974DC01BFE8914835E4D4937BB /* Pods-AgraLogicSwiftTests-acknowledgements.plist */,
+				AD10086C30D426B892732D5CE8280D3D /* Pods-AgraLogicSwiftTests-dummy.m */,
+				25CB907D83BFE6A3D217DDA880EB05B9 /* Pods-AgraLogicSwiftTests-Info.plist */,
+				2BA7FF5A54EC8458C9A87BAEB09E2F3F /* Pods-AgraLogicSwiftTests-umbrella.h */,
+				9364151A67EEAA82D2DE7C79A45036A2 /* Pods-AgraLogicSwiftTests.debug.xcconfig */,
+				0796B13D7C24A377A75E2E8FC2C8C8BF /* Pods-AgraLogicSwiftTests.release.xcconfig */,
+			);
+			name = "Pods-AgraLogicSwiftTests";
+			path = "Target Support Files/Pods-AgraLogicSwiftTests";
+			sourceTree = "<group>";
+		};
+		F820A329FB9B3597D8692BB799A4BA89 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF10D46FF29F12C46E13CD126BC088D8 /* CoreGraphics.framework */,
+				168088FA8F05D3A50BD9657DAC7B3BF0 /* CoreTelephony.framework */,
+				CDEF39F8CC368A608F1AC0518F690442 /* Foundation.framework */,
+				C003AA07784409B9F3BDDB7DAC0464FD /* QuartzCore.framework */,
+				35211228E7BB203160CEC18618832DB3 /* SystemConfiguration.framework */,
+				1BB7042445B2A66FBE52012484BEE854 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F99A3C42F2F0CB70E43587F1F47F7667 /* Pods-AgraLogicSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79A0E69E9BED94072C76CAD554B2E13D /* Pods-AgraLogicSwiftUITests.modulemap */,
+				DA49F6B4B770DC4D77A6489A43B0ACB2 /* Pods-AgraLogicSwiftUITests-acknowledgements.markdown */,
+				7339D0D21905B8A774D6BDA927DBE116 /* Pods-AgraLogicSwiftUITests-acknowledgements.plist */,
+				91B621D420E2BE0C0530318069D23B11 /* Pods-AgraLogicSwiftUITests-dummy.m */,
+				1C3F28849E54FF3CCC791BB9EC2C0F3D /* Pods-AgraLogicSwiftUITests-Info.plist */,
+				3C78D7E93B1B91243BEE14173C4A1A67 /* Pods-AgraLogicSwiftUITests-umbrella.h */,
+				21AC4ABCFBD1DB586EF1F019D49E21F6 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */,
+				646516C917D0EC15688DACA27EA577BA /* Pods-AgraLogicSwiftUITests.release.xcconfig */,
+			);
+			name = "Pods-AgraLogicSwiftUITests";
+			path = "Target Support Files/Pods-AgraLogicSwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC9C2E4905B9725687830ECA5B77765 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D11E828CECEE7E252B4F978616583C /* Pods-AgraLogicSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9966291799A5B6BD083A286FE70B4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719465AD4CF623E2FB29272EF9207673 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD2C029FC627D78FBEBD0C3829ACA56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5677C54BF14ABA45675F2DEB98AFD0D1 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1D3865244EB91B59727F7DA633C7E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0D7B7D06E19680CD3F4BE491945B4E /* Pods-AgraLogicSwiftTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94FB741F7628858615A849E30F6D535 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D04C4D2DF256F4FEE65424989111F /* Pods-AgraLogicSwiftUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		056B209563983D6540AAA8FC22142487 /* Pods-AgraLogicSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD9C64A485092BA84326DA9D9921B04 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwift" */;
+			buildPhases = (
+				3DC9C2E4905B9725687830ECA5B77765 /* Headers */,
+				1887B324FC1E4ACE9C50B5F7AB089F21 /* Sources */,
+				54BF53A23A9DC686AEB4F4CEF2C5A034 /* Frameworks */,
+				CCFAC4DDE7142602EFD45AC6198825A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564A775DDEA245DFCB33014BC5827D8C /* PBXTargetDependency */,
+				D988D018029BD3B6E68B344056156D9C /* PBXTargetDependency */,
+				5152AEE96C9582374D73A4E4EDCFBB99 /* PBXTargetDependency */,
+			);
+			name = "Pods-AgraLogicSwift";
+			productName = "Pods-AgraLogicSwift";
+			productReference = 1ABBF29F605F36A1807171151FD9D6DB /* Pods_AgraLogicSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24657E92CBC8FA7CA006847CA21F18A /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				5A9966291799A5B6BD083A286FE70B4F /* Headers */,
+				3D411AAB6A028F343E1E7C645D74FCFF /* Sources */,
+				32527AA64370A7D02DA57C80279A40F1 /* Frameworks */,
+				B2FBF670A18A50398B40D9642F22242A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 2043F46D070ADCF0808EACCA3F4FA5B2 /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		354C2D859F8C1F2B4265074AAA4BD7F9 /* Pods-AgraLogicSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4B2BC368638D7841322D6DB2D3A9D3 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwiftUITests" */;
+			buildPhases = (
+				E94FB741F7628858615A849E30F6D535 /* Headers */,
+				5E5A11DAFBC2A7AB8BBD976F32AB9AD2 /* Sources */,
+				F386BED8DC386FBC82F4C44C67040ABD /* Frameworks */,
+				2C9227D7BF15080C3082CBD48230690D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65C9050C7649A91AE241F584AEC71C4D /* PBXTargetDependency */,
+			);
+			name = "Pods-AgraLogicSwiftUITests";
+			productName = "Pods-AgraLogicSwiftUITests";
+			productReference = F5B86A7C809C75A255F6F713858D8B2C /* Pods_AgraLogicSwiftUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B91B77FBB13EFD33FB1AE6F88ABA7C5 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				5FD2C029FC627D78FBEBD0C3829ACA56 /* Headers */,
+				6F0641652E0536423FE9FDF6727E0BDF /* Sources */,
+				0BCC765CA7E5612D4DD58BE9EE6BA3CC /* Frameworks */,
+				DC94709994DB7B9EF675DAE0DB5045E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = CA2DA685A038AD277B8540F8EBA32390 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4CE77E6233B323713BEEBD1C3100710 /* Pods-AgraLogicSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24FCD26864693BCFEEC81709BA9D6A5 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwiftTests" */;
+			buildPhases = (
+				AB1D3865244EB91B59727F7DA633C7E5 /* Headers */,
+				CE5AB898E83F3B1E1FD60340F616891B /* Sources */,
+				7F10D96B45919F4E7E9482D3BB39E98A /* Frameworks */,
+				EE554B8D3BA057B77AFC2EB0A8501BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C8A57450E37BC4814D53737836671FC /* PBXTargetDependency */,
+			);
+			name = "Pods-AgraLogicSwiftTests";
+			productName = "Pods-AgraLogicSwiftTests";
+			productReference = 3C3161D5CF11742774966F781E09F948 /* Pods_AgraLogicSwiftTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */,
+				CFA11E47B3EB3A36AA49F6F7F060CB98 /* Sources */,
+				F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */,
+				28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 2E8885E02D0262A8E17BBAF421E902C4 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A8B5104D85466982E333009C1BE099C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				056B209563983D6540AAA8FC22142487 /* Pods-AgraLogicSwift */,
+				D4CE77E6233B323713BEEBD1C3100710 /* Pods-AgraLogicSwiftTests */,
+				354C2D859F8C1F2B4265074AAA4BD7F9 /* Pods-AgraLogicSwiftUITests */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9227D7BF15080C3082CBD48230690D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FBF670A18A50398B40D9642F22242A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFAC4DDE7142602EFD45AC6198825A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC94709994DB7B9EF675DAE0DB5045E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B178B38FCD7F99B07422484FC7FD6861 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE554B8D3BA057B77AFC2EB0A8501BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1887B324FC1E4ACE9C50B5F7AB089F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED31BC4787BB184F7B86CC38F7198D48 /* Pods-AgraLogicSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D411AAB6A028F343E1E7C645D74FCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DF7FD988870D75E818E4558D17A070 /* Reachability.swift in Sources */,
+				7C92C8E65C1DA9C0C864D6DCBA207F45 /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5A11DAFBC2A7AB8BBD976F32AB9AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AF8993A477CE9510711B7111F09B3E /* Pods-AgraLogicSwiftUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0641652E0536423FE9FDF6727E0BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8C6859CEE62AC3C4DEB2180D74A3C /* IQBarButtonItem.swift in Sources */,
+				7F2C37635B13BD13496CD6E160E77473 /* IQInvocation.swift in Sources */,
+				5A3FDED6B7ED8DFCEFC970E22D821654 /* IQKeyboardManager.swift in Sources */,
+				108CD8A82F7CFC6F57237498B060F0E8 /* IQKeyboardManagerConstants.swift in Sources */,
+				84AAA219A9C8E0A431ECA066E3CADC2B /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				4B39E0A2E43F16029A84168D30541CA2 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				A33530452C800132C869C9D50E8C51F4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				3615A32D72BDEE6F70F6F1E258739D89 /* IQNSArray+Sort.swift in Sources */,
+				75D952736C240CA7CB20C449D7E7FAB4 /* IQPreviousNextView.swift in Sources */,
+				8D0A78526FF7EFD33E4808281A26A115 /* IQTextView.swift in Sources */,
+				864F037752C78D01A74AF740E3D9409B /* IQTitleBarButtonItem.swift in Sources */,
+				62DEB99B645FC18DF60E0E62FA8770CB /* IQToolbar.swift in Sources */,
+				A6FD67030A362813EBF7BC9749C55CDB /* IQUIScrollView+Additions.swift in Sources */,
+				1B816D0DA8D50AA177803295CE15D264 /* IQUITextFieldView+Additions.swift in Sources */,
+				3A07BEE50C7847C37762F525587F84CC /* IQUIView+Hierarchy.swift in Sources */,
+				C5C5BF880D88A7E52F4DCB140AB7B846 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				C84B862C309A2659959448EE2448246E /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5AB898E83F3B1E1FD60340F616891B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BCAAD6DE1930443DBAD963A184DFC8 /* Pods-AgraLogicSwiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA11E47B3EB3A36AA49F6F7F060CB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B082FA7223428C8DE32F7DE7F5AF441C /* AFError.swift in Sources */,
+				559368DD6966DB1193B3FD6E7CBF5FED /* Alamofire-dummy.m in Sources */,
+				5B1086B0A866704A6CAF72B5A47582C6 /* Alamofire.swift in Sources */,
+				D2B384893454A891D32CB20A53E4EDAF /* DispatchQueue+Alamofire.swift in Sources */,
+				F4D82D78C14BF258042CDA3C1B15B7E1 /* MultipartFormData.swift in Sources */,
+				72C2F0877FAB758F102C1D5FB6641559 /* NetworkReachabilityManager.swift in Sources */,
+				B2E54789768E4F4EE35F11E0034C7383 /* Notifications.swift in Sources */,
+				A5ADEF55257E4C1A482BF072C205F388 /* ParameterEncoding.swift in Sources */,
+				14ECF6E40B0356170FEDE170B2EB6F2F /* Request.swift in Sources */,
+				5C2F9E5485166B59DD032D7DF4C29CF0 /* Response.swift in Sources */,
+				ADB18D94C4F71AE2FCE388100D556B0F /* ResponseSerialization.swift in Sources */,
+				E7BA58DE1AA8F11BAA7E8817D8AB509C /* Result.swift in Sources */,
+				4920AD2B3D668DB550BEDED6747F925B /* ServerTrustPolicy.swift in Sources */,
+				FFB9BA683C701138C08A211F3E192F56 /* SessionDelegate.swift in Sources */,
+				ABAEB9DEE3CE05729A9442CFA1988407 /* SessionManager.swift in Sources */,
+				594494BAB3E029862D7009DE60FCC904 /* TaskDelegate.swift in Sources */,
+				505B75241DCEA8C1FBF9F479C2DDEF31 /* Timeline.swift in Sources */,
+				D583829CA1D3C6B9B8F5C085B1D597EF /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5152AEE96C9582374D73A4E4EDCFBB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 1B60C94E2ECA7C839EA0751033297449 /* PBXContainerItemProxy */;
+		};
+		564A775DDEA245DFCB33014BC5827D8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = C236BA6B0F865F0A1840F90DCC40710A /* PBXContainerItemProxy */;
+		};
+		65C9050C7649A91AE241F584AEC71C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AgraLogicSwift";
+			target = 056B209563983D6540AAA8FC22142487 /* Pods-AgraLogicSwift */;
+			targetProxy = C008C772C3F8C2AA9582CF3EF59140E2 /* PBXContainerItemProxy */;
+		};
+		7C8A57450E37BC4814D53737836671FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AgraLogicSwift";
+			target = 056B209563983D6540AAA8FC22142487 /* Pods-AgraLogicSwift */;
+			targetProxy = D97C1EE15D424F67D285F76584AD0635 /* PBXContainerItemProxy */;
+		};
+		D988D018029BD3B6E68B344056156D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = C44340F963E6A95A15A64390905174C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0708969DAF7DA601DC5EB08742325D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1660535E4A15028044FB04C3E5510D3 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A4C533C39F4762A634E4875267962C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7865EC13C80737FC1B1805FC17E87828 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A829EE305410177D209D9F44CA4EA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA353F58BC525C5C64DB04631084FA1 /* Pods-AgraLogicSwift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B77ADB7EAEC6BE432048154EE7B33D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0796B13D7C24A377A75E2E8FC2C8C8BF /* Pods-AgraLogicSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EA6EC53583A2B86A04CE9AE1B75BB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9364151A67EEAA82D2DE7C79A45036A2 /* Pods-AgraLogicSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwiftTests/Pods-AgraLogicSwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62D1A7A75F1D1BF0B33B9DAD789B7932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6F0715139ED7C568091E606ED2577BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21AC4ABCFBD1DB586EF1F019D49E21F6 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EA39F944C51F1E0AA0990A3A438CEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9110C394653EA0CA359CAD08CB807610 /* Pods-AgraLogicSwift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CF36E6AA46D597086D835E1724A4D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9749968B85016B7B2DE331EDECF5A991 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7A486C8231B9095E29934474A5761A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1660535E4A15028044FB04C3E5510D3 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B914025A518B53556696F19D8D477057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9749968B85016B7B2DE331EDECF5A991 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCB66BB69A79AD3460165BB90418BC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 646516C917D0EC15688DACA27EA577BA /* Pods-AgraLogicSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4ADF7334072163EEC1DB8D49DCDBC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7865EC13C80737FC1B1805FC17E87828 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D418BCB9D402219D02DC27BA96471B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B91B77FBB13EFD33FB1AE6F88ABA7C5 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4C533C39F4762A634E4875267962C4 /* Debug */,
+				C4ADF7334072163EEC1DB8D49DCDBC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D418BCB9D402219D02DC27BA96471B50 /* Debug */,
+				62D1A7A75F1D1BF0B33B9DAD789B7932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AD9C64A485092BA84326DA9D9921B04 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA39F944C51F1E0AA0990A3A438CEF1 /* Debug */,
+				4A829EE305410177D209D9F44CA4EA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4B2BC368638D7841322D6DB2D3A9D3 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0715139ED7C568091E606ED2577BCB /* Debug */,
+				BCB66BB69A79AD3460165BB90418BC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24657E92CBC8FA7CA006847CA21F18A /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A486C8231B9095E29934474A5761A1 /* Debug */,
+				0708969DAF7DA601DC5EB08742325D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24FCD26864693BCFEEC81709BA9D6A5 /* Build configuration list for PBXNativeTarget "Pods-AgraLogicSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA6EC53583A2B86A04CE9AE1B75BB37 /* Debug */,
+				4B77ADB7EAEC6BE432048154EE7B33D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B914025A518B53556696F19D8D477057 /* Debug */,
+				9CF36E6AA46D597086D835E1724A4D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
