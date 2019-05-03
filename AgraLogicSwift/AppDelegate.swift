@@ -17,12 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var managedObjectContext : NSManagedObjectContext?
+    
+    //MARK: - UIApplication Life Cycle Methods.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         // Override point for customization after application launch.
+        self.managedObjectContext = persistentContainer.viewContext
         
-        
+        print("core data root path : \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])")
         
         //declare this property where it won't go out of scope relative to your listener
         let reachability = Reachability()!
@@ -43,8 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Unable to start notifier")
         }
-        
-        
         
         //enable the IQKeyboard
         IQKeyboardManager.shared.enable = true
@@ -87,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "AgraLogicSwift")
+        let container = NSPersistentContainer(name: "Agralogic")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -102,8 +103,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                  Check the error message to determine what the actual problem was.
                  */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
+                
+                if self.window!.rootViewController != nil
+                {
+                    Utility.showAlertMessage(strTitle: "Alert", strMessage: "Local DB (Persistent Store) gives error : \(error.userInfo)", objController: (self.window?.rootViewController)!)
+                }
+                
+              
             }
         })
+        
+        
+        
         return container
     }()
 
@@ -122,6 +133,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
     
     
     //MARK: - Custom Methods.

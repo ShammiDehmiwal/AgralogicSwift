@@ -52,19 +52,28 @@ class LoginVC: UIViewController {
             Utility.hideLoader(parentView: self.view) //hide the loader.
             
                         do {
-                
                                 guard let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [String : Any] else { return }
                 
-                            
-                            
                             let dicData : NSDictionary = Utility.trimNullFromDictionaryResponse(dic: jsonObject as NSDictionary)
                             
-                             print("Response Json Login : \(dicData)")
-                
-                            UserDefaults.standard.set(dicData, forKey:"userData")
-                            UserDefaults.standard.synchronize()
+                            print("Response Json Login : \(dicData)")
                             
-                           
+                            //if authorize only then can go further.
+                            if dicData.value(forKey: "authorized") as! Bool
+                            {
+                                Utility.setAccessToken(strAccessToken: dicData.object(forKey: "auth_token") as! String)
+                                
+                                UserDefaults.standard.set(dicData, forKey:"userData")
+                                UserDefaults.standard.synchronize()
+                                
+                                let objAccount : AccountVC = self.storyboard?.instantiateViewController(withIdentifier: "AccountVC") as! AccountVC
+                                self.navigationController?.pushViewController(objAccount, animated: true)
+                                
+                                
+                            }else
+                            {
+                                Utility.showAlertMessage(strTitle: "Warning", strMessage: "Invalid username or password.", objController: self)
+                            }
                             
                             }catch let jsonErr
                             {

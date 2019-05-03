@@ -10,6 +10,17 @@ import UIKit
 
 class SelectAccountListCell: UITableViewCell {
 
+    @IBOutlet weak var lblSerialNumber: UILabel!
+    
+    @IBOutlet weak var vSerialNumber: UIView!
+    
+    @IBOutlet weak var lblAccountName: UILabel!
+    
+    @IBOutlet weak var lblAcreage: UILabel!
+    
+    @IBOutlet weak var lblCrops: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

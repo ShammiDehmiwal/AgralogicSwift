@@ -12,6 +12,30 @@ import QuartzCore
 
 class Utility
 {
+    //MARK: - Custom Data Methods.
+    class func setAccessToken(strAccessToken : String) {
+        
+        if strAccessToken != ""
+        {
+            UserDefaults.standard.set(strAccessToken, forKey: "access_token")
+             UserDefaults.standard.synchronize()
+        }
+        
+    }
+    
+    class func getAccessToken() -> String {
+        
+        if let strAccessToken = UserDefaults.standard.object(forKey: "access_token") as? String
+        {
+            return strAccessToken
+        }else
+        {
+            return ""
+        }
+    }
+    
+    
+    //MARK: - Common Methods
     class func validateEnvironment(strEnvironment : String) -> String
     {
         if !strEnvironment.contains(".agralogics.com") // if not contains - use negation.
@@ -46,6 +70,7 @@ class Utility
         return dicTrimNull
     }
     
+    
     func showLoader(parentView : UIView)
     {
         if let objHud : MBProgressHUD = parentView.viewWithTag(1010) as? MBProgressHUD
@@ -63,6 +88,7 @@ class Utility
             hud?.removeFromSuperViewOnHide = true
         }
     }
+    
     
    class func showLoaderWithMessage(parentView : UIView, strMsg : String)
     {
@@ -82,10 +108,18 @@ class Utility
         }
     }
     
+    
    class func hideLoader(parentView : UIView)
     {
         MBProgressHUD.hide(for: parentView, animated: true)
         
+    }
+    
+   class func showAlertMessage(strTitle : String , strMessage : String, objController : UIViewController)
+    {
+        let alert = UIAlertController(title: strTitle, message: strMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        objController.present(alert, animated: true, completion: nil)
     }
     
 }

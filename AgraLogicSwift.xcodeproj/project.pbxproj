@@ -12,7 +12,6 @@
 		ECC1304E36A512A46D2607A9 /* Pods_AgraLogicSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */; };
 		F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3B7227AB2210023BB4A /* AppDelegate.swift */; };
 		F948B3BD227AB2210023BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F948B3BB227AB2210023BB4A /* Main.storyboard */; };
-		F948B3C0227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */; };
 		F948B3C2227AB2220023BB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F948B3C1227AB2220023BB4A /* Assets.xcassets */; };
 		F948B3C5227AB2220023BB4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F948B3C3227AB2220023BB4A /* LaunchScreen.storyboard */; };
 		F948B3D0227AB2220023BB4A /* AgraLogicSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3CF227AB2220023BB4A /* AgraLogicSwiftTests.swift */; };
@@ -36,6 +35,9 @@
 		F948B428227AF16E0023BB4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F948B427227AF16E0023BB4A /* SystemConfiguration.framework */; };
 		F948B42A227AF85D0023BB4A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B429227AF85D0023BB4A /* LoginPresenter.swift */; };
 		F948B42C227AFC070023BB4A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B42B227AFC070023BB4A /* Utility.swift */; };
+		F94D3115227C503E00266AA3 /* Agralogic.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = F94D3114227C503E00266AA3 /* Agralogic.xcdatamodel */; };
+		F94D3117227C50A500266AA3 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D3116227C50A500266AA3 /* AccountPresenter.swift */; };
+		F94D3119227C5A3D00266AA3 /* CoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D3118227C5A3D00266AA3 /* CoreUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,6 @@
 		F948B3B4227AB2210023BB4A /* AgraLogicSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgraLogicSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F948B3B7227AB2210023BB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F948B3BC227AB2210023BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgraLogicSwift.xcdatamodel; sourceTree = "<group>"; };
 		F948B3C1227AB2220023BB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F948B3C4227AB2220023BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F948B3C6227AB2220023BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +104,9 @@
 		F948B427227AF16E0023BB4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F948B429227AF85D0023BB4A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F948B42B227AFC070023BB4A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F94D3114227C503E00266AA3 /* Agralogic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agralogic.xcdatamodel; sourceTree = "<group>"; };
+		F94D3116227C50A500266AA3 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		F94D3118227C5A3D00266AA3 /* CoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,7 +289,8 @@
 		F948B3F1227AB9130023BB4A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */,
+				F94D3114227C503E00266AA3 /* Agralogic.xcdatamodel */,
+				F94D3118227C5A3D00266AA3 /* CoreUtils.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 		F948B3F7227AC5910023BB4A /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F94D3116227C50A500266AA3 /* AccountPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -597,18 +603,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F948B3C0227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld in Sources */,
 				F948B3FA227AC5AE0023BB4A /* AccountVC.swift in Sources */,
 				F948B42A227AF85D0023BB4A /* LoginPresenter.swift in Sources */,
 				F948B3FC227AC9C20023BB4A /* SelectAccountListCell.swift in Sources */,
+				F94D3115227C503E00266AA3 /* Agralogic.xcdatamodel in Sources */,
 				F948B419227AE5130023BB4A /* TSMessageView.m in Sources */,
 				F948B42C227AFC070023BB4A /* Utility.swift in Sources */,
+				F94D3117227C50A500266AA3 /* AccountPresenter.swift in Sources */,
 				F948B407227ACEC90023BB4A /* MBProgressHUD.m in Sources */,
 				F948B3F5227ABBC50023BB4A /* Constant.swift in Sources */,
 				F948B41C227AE5130023BB4A /* TSMessage.m in Sources */,
 				F948B41A227AE5130023BB4A /* TSBlurView.m in Sources */,
 				F948B401227ACC7D0023BB4A /* SplashVC.swift in Sources */,
 				F948B41F227AE62A0023BB4A /* HexColors.m in Sources */,
+				F94D3119227C5A3D00266AA3 /* CoreUtils.swift in Sources */,
 				F948B424227AEBA80023BB4A /* CommonApi.swift in Sources */,
 				F948B3F3227ABAE50023BB4A /* LoginVC.swift in Sources */,
 				F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */,
@@ -952,19 +960,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F948B3BE227AB2210023BB4A /* AgraLogicSwift.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */,
-			);
-			currentVersion = F948B3BF227AB2210023BB4A /* AgraLogicSwift.xcdatamodel */;
-			path = AgraLogicSwift.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F948B3AC227AB2210023BB4A /* Project object */;
 }

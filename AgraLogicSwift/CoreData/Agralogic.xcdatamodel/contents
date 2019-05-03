@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D42" minimumToolsVersion="Xcode 4.3" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES">
+        <attribute name="account_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="account_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="acreage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crops" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="enabled" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranches_count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Activities" representedClassName="Activities" syncable="YES">
+        <attribute name="activity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="activity_type_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actual_amount" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="adjust_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="closing_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="completed_on" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="custom_values" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delete_permission" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="field_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notify" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parent" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranch_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduled_on" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sub_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="update_permission" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user_defined_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="week_of_year" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="CDDWeather" representedClassName="CDDWeather" syncable="YES">
+        <attribute name="cddDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="maxtempF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mintempF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Coordinates" representedClassName="Coordinates" syncable="YES">
+        <attribute name="elevation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Created" representedClassName="Created" syncable="YES">
+        <attribute name="activity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="observation_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Activities" syncable="YES"/>
+        <relationship name="observation" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Observations" syncable="YES"/>
+    </entity>
+    <entity name="Deleted" representedClassName="Deleted" syncable="YES">
+        <attribute name="activity_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observation_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="area_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="event_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subcategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Field" representedClassName="Field" syncable="YES">
+        <attribute name="field_acreage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="field_crop" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coordinates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Coordinates" syncable="YES"/>
+        <relationship name="hasRanch" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Ranch" inverseName="hasFields" inverseEntity="Ranch" syncable="YES"/>
+    </entity>
+    <entity name="GenActivityType" representedClassName="GenActivityType" syncable="YES">
+        <attribute name="activity_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="create_permission" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="enabled" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="activityTypeField" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GenActivityTypeField" syncable="YES"/>
+    </entity>
+    <entity name="GenActivityTypeField" representedClassName="GenActivityTypeField" syncable="YES">
+        <attribute name="name_field_defaultValue" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name_field_enable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_is_lock_value" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_is_scanned" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_field_lock_value_options" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name_field_meta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_field_modify_at_complete" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_only_admin_can_update" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_only_admin_can_view_mobile" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_required" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name_field_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_field_value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_defaultValue" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="quantity_field_enable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_is_lock_value" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_is_scanned" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity_field_lock_value_options" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="quantity_field_meta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity_field_modify_at_complete" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_only_admin_can_update" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_only_admin_can_view_mobile" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_required" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity_field_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity_field_value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_defaultValue" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="unit_field_enable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_is_lock_value" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_is_scanned" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit_field_lock_value_options" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="unit_field_meta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit_field_modify_at_complete" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_only_admin_can_update" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_only_admin_can_view_mobile" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_required" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit_field_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit_field_value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Notifications" representedClassName="Notifications" syncable="YES">
+        <attribute name="account_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_data_fetched" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="event_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parcel_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Observations" representedClassName="Observations" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="closing_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completed_on" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="delete_permission" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="field_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notify" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observation_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observation_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ranch_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduled_on" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sub_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="update_permission" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user_defined_category" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="OfflinePhotos" representedClassName="OfflinePhotos" syncable="YES">
+        <attribute name="activity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="observation_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photoData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activities" syncable="YES"/>
+        <relationship name="observation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Observations" syncable="YES"/>
+        <relationship name="ranch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ranch" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="create_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="date_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="file_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photo_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photo_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo_url_original" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo_url_thumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="processing" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ranch" representedClassName="Ranch" syncable="YES">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_acreage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_canonical_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_crop" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_crop_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_farm_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_farm_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_field_img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_fields_count" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_user_summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Activities" syncable="YES"/>
+        <relationship name="hasFields" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Field" inverseName="hasRanch" inverseEntity="Field" syncable="YES"/>
+        <relationship name="observations" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Observations" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" syncable="YES"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weather_Today" syncable="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="Tags" syncable="YES">
+        <attribute name="field_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ranch_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Updated" representedClassName="Updated" syncable="YES">
+        <attribute name="activity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="observation_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Activities" syncable="YES"/>
+        <relationship name="observation" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Observations" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="user_fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_lname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_screen_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Weather_Current" representedClassName="Weather_Current" syncable="YES">
+        <attribute name="cloudcover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feelsLikeC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feelsLikeF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxtempC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxtempF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mintempC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mintempF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observation_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precipMM" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp_C" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp_F" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddir16Point" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddirDegree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedKmph" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hourlyWeather" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Weather_Hourly" syncable="YES"/>
+    </entity>
+    <entity name="Weather_Day" representedClassName="Weather_Day" syncable="YES">
+        <attribute name="condition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxTemp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="minTemp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Weather_Hourly" representedClassName="Weather_Hourly" syncable="YES">
+        <attribute name="chanceOfRain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hour" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherIconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddir16Point" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedKmph" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Weather_Today" representedClassName="Weather_Today" syncable="YES">
+        <attribute name="condition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="temp_hi" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="temp_lo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="day" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Weather_Day" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Accounts" positionX="-27" positionY="108" width="128" height="135"/>
+        <element name="Activities" positionX="-18" positionY="117" width="128" height="525"/>
+        <element name="CDDWeather" positionX="-27" positionY="135" width="128" height="118"/>
+        <element name="Coordinates" positionX="-27" positionY="108" width="128" height="88"/>
+        <element name="Created" positionX="-27" positionY="135" width="128" height="105"/>
+        <element name="Deleted" positionX="-27" positionY="135" width="128" height="75"/>
+        <element name="Event" positionX="-18" positionY="108" width="128" height="178"/>
+        <element name="Field" positionX="-54" positionY="63" width="128" height="163"/>
+        <element name="GenActivityType" positionX="-27" positionY="135" width="128" height="120"/>
+        <element name="GenActivityTypeField" positionX="-18" positionY="144" width="128" height="630"/>
+        <element name="Notifications" positionX="-27" positionY="135" width="128" height="165"/>
+        <element name="Observations" positionX="-27" positionY="135" width="128" height="390"/>
+        <element name="OfflinePhotos" positionX="-27" positionY="135" width="128" height="150"/>
+        <element name="Photo" positionX="-36" positionY="99" width="128" height="268"/>
+        <element name="Ranch" positionX="-63" positionY="-18" width="128" height="345"/>
+        <element name="Tags" positionX="-27" positionY="135" width="128" height="90"/>
+        <element name="Updated" positionX="-18" positionY="144" width="128" height="105"/>
+        <element name="User" positionX="0" positionY="153" width="128" height="103"/>
+        <element name="Weather_Current" positionX="-27" positionY="135" width="128" height="358"/>
+        <element name="Weather_Day" positionX="0" positionY="162" width="128" height="118"/>
+        <element name="Weather_Hourly" positionX="-18" positionY="144" width="128" height="210"/>
+        <element name="Weather_Today" positionX="-9" positionY="153" width="128" height="118"/>
+    </elements>
+</model>
