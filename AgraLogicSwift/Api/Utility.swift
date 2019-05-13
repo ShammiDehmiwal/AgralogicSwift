@@ -108,7 +108,6 @@ class Utility
         }
     }
     
-    
    class func hideLoader(parentView : UIView)
     {
         MBProgressHUD.hide(for: parentView, animated: true)

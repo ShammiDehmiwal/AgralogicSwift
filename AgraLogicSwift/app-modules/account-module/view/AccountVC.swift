@@ -28,7 +28,6 @@ class AccountVC: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         // Do any additional setup after loading the view.
         
-        
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -162,15 +161,14 @@ class AccountVC: UIViewController,UITableViewDelegate,UITableViewDataSource
                     if strStatus == "SUCCESS"
                     {// account linked.
                         
-                        UserDefaults.standard.set(Utility.trimNullFromDictionaryResponse(dic: dicAccount), forKey: "linked_account")
-                        UserDefaults.standard.synchronize()
+                    UserDefaults.standard.set(Utility.trimNullFromDictionaryResponse(dic: dicAccount), forKey: "linked_account")
+                    UserDefaults.standard.synchronize()
                         
-                        //load all ranches of user.
-                        self.fetchAllRanches()
-                     
-                     //   let objAccount : SplashVC = self.storyboard?.instantiateViewController(withIdentifier: "SplashVC") as! SplashVC
                         
-                      //  self.navigationController?.pushViewController(objAccount, animated: true)
+                        let objAccount : SplashVC = self.storyboard?.instantiateViewController(withIdentifier: "SplashVC") as! SplashVC
+                        
+                        self.navigationController?.pushViewController(objAccount, animated: true)
+                        
                         
                     }else
                     {
@@ -192,134 +190,7 @@ class AccountVC: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     
-    func fetchAllRanches()
-    {
-        let strUrl = "\(kApiHost)/ranches"
-        
-        Utility.showLoaderWithMessage(parentView: self.view, strMsg: "Loading Account Ranches...") // show the loader.
-        
-        let header : [String : String] = ["Authorization":Utility.getAccessToken(),"Accept-Encoding":"gzip"]
-        
-        CommonApi.sharedInstance.apiRequest(url: URL(string: strUrl)!, typeMethod: .get, params: [:], header: header, onSuccess: { data,response,error  in
-            
-            Utility.hideLoader(parentView: self.view) //hide the loader.
-            
-            do {
-                guard let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary else { return }
-                
-                print("Response Json Account : \(jsonObject)")
-                
-                let marrRanches : NSMutableArray = NSMutableArray()
-                
-                var arrRances : NSArray = NSArray()
-                
-                if let arr = jsonObject.object(forKey: "ranch") as? NSArray
-                {
-                    arrRances = arr
-                }
-                
-                for x in 0..<arrRances.count
-                {
-                    let dic : NSDictionary = arrRances.object(at: x) as! NSDictionary
-                    
-                    marrRanches.add(Utility.trimNullFromDictionaryResponse(dic: dic))
-                    
-                }
-                
-                
-                if marrRanches.count > 0
-                {//save all ranches in db.
-                   if self.presenter.saveAllRanchesIntoDB(arrRanches: marrRanches)
-                   {
-                      for x in 0..<marrRanches.count
-                      {
-                        let dic : NSDictionary = marrRanches.object(at: x) as! NSDictionary
-                        
-                        self.getRanchDetails(dicRanch: dic) // fetch ranch details and saved into db.
-                      }
-                    
-                    }else
-                   {
-                      Utility.showAlertMessage(strTitle: "Warning", strMessage: "Unable to fetch all raches data. Please try again.", objController: self)
-                    }
-                }else
-                {
-                    
-                    
-                }
-                
-                
-            }catch let jsonErr
-            {
-                print("Error Login Response : \(jsonErr)")
-            }
-            
-        }, onFailure: { error in
-            
-            print("failure error : \(error)")
-            Utility.hideLoader(parentView: self.view) //hide the loader.
-        })
-        
-    }
-    
-    
-    func getRanchDetails(dicRanch : NSDictionary)
-    {
-        let strUrl = "\(kApiHost)/ranches/\(dicRanch.object(forKey: "id") as! NSNumber)"
-        
-        Utility.showLoaderWithMessage(parentView: self.view, strMsg: "Loading Ranch Fields...") // show the loader.
-        
-        let header : [String : String] = ["Authorization":Utility.getAccessToken(),"Accept-Encoding":"gzip"]
-        
-        CommonApi.sharedInstance.apiRequest(url: URL(string: strUrl)!, typeMethod: .get, params: [:], header: header, onSuccess: { data,response,error  in
-            
-            Utility.hideLoader(parentView: self.view) //hide the loader.
-            
-            do {
-                guard let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary else { return }
-                
-                print("Response Ranch Fields : \(jsonObject)")
-                
-                if let strStatus = jsonObject.object(forKey: "status") as? String
-                {
-                    if strStatus == "SUCCESS"
-                    {// account linked.
-                        
-                        if let currentRanch = jsonObject.object(forKey: "ranch") as? NSDictionary
-                        {
-                             self.presenter.saveRanchFields(dicRanch: dicRanch)
-                        }
-                        
-                       
-                        UserDefaults.standard.set(Utility.trimNullFromDictionaryResponse(dic: dicAccount), forKey: "linked_account")
-                        UserDefaults.standard.synchronize()
-                        
-                        //load all ranches of user.
-                        self.fetchAllRanches()
-                        
-                        //   let objAccount : SplashVC = self.storyboard?.instantiateViewController(withIdentifier: "SplashVC") as! SplashVC
-                        
-                        //  self.navigationController?.pushViewController(objAccount, animated: true)
-                        
-                    }else
-                    {
-                        Utility.showAlertMessage(strTitle: "Warning", strMessage: "Facing issue in associating account with you. Please try again !", objController: self)
-                    }
-                }
-                
-            }catch let jsonErr
-            {
-                print("Error Login Response : \(jsonErr)")
-            }
-            
-        }, onFailure: { error in
-            
-            print("failure error : \(error)")
-            Utility.hideLoader(parentView: self.view) //hide the loader.
-        })
-        
-    }
-    
+   
     /*
     // MARK: - Navigation
 

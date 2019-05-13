@@ -10,6 +10,51 @@
 		1A22D555D1B8A57092273CAF /* Pods_AgraLogicSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8E9D6BE5FCB0985E3C3223 /* Pods_AgraLogicSwift.framework */; };
 		23F6059577A2723C5A5A87B6 /* Pods_AgraLogicSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3F5C74129E591BCD95F3D2 /* Pods_AgraLogicSwiftTests.framework */; };
 		ECC1304E36A512A46D2607A9 /* Pods_AgraLogicSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */; };
+		F91CD056228971F700EE6AFD /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91CD055228971F700EE6AFD /* SplashPresenter.swift */; };
+		F9334FF4228001F400A679F4 /* Accounts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FC8228001F300A679F4 /* Accounts+CoreDataProperties.swift */; };
+		F9334FF5228001F400A679F4 /* Weather_Current+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FC9228001F300A679F4 /* Weather_Current+CoreDataClass.swift */; };
+		F9334FF6228001F400A679F4 /* Field+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCA228001F300A679F4 /* Field+CoreDataProperties.swift */; };
+		F9334FF7228001F400A679F4 /* Observations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCB228001F300A679F4 /* Observations+CoreDataProperties.swift */; };
+		F9334FF8228001F400A679F4 /* Weather_Hourly+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCC228001F300A679F4 /* Weather_Hourly+CoreDataClass.swift */; };
+		F9334FF9228001F400A679F4 /* Ranch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCD228001F300A679F4 /* Ranch+CoreDataClass.swift */; };
+		F9334FFA228001F400A679F4 /* Observations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCE228001F300A679F4 /* Observations+CoreDataClass.swift */; };
+		F9334FFB228001F400A679F4 /* Field+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FCF228001F300A679F4 /* Field+CoreDataClass.swift */; };
+		F9334FFC228001F400A679F4 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD0228001F300A679F4 /* Event+CoreDataClass.swift */; };
+		F9334FFD228001F400A679F4 /* Coordinates+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD1228001F300A679F4 /* Coordinates+CoreDataClass.swift */; };
+		F9334FFE228001F400A679F4 /* Coordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD2228001F300A679F4 /* Coordinates+CoreDataProperties.swift */; };
+		F9334FFF228001F400A679F4 /* Tags+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD3228001F300A679F4 /* Tags+CoreDataProperties.swift */; };
+		F9335000228001F400A679F4 /* Activities+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD4228001F300A679F4 /* Activities+CoreDataClass.swift */; };
+		F9335001228001F400A679F4 /* CDDWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD5228001F300A679F4 /* CDDWeather+CoreDataClass.swift */; };
+		F9335002228001F400A679F4 /* CDDWeather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD6228001F300A679F4 /* CDDWeather+CoreDataProperties.swift */; };
+		F9335003228001F400A679F4 /* Weather_Hourly+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD7228001F300A679F4 /* Weather_Hourly+CoreDataProperties.swift */; };
+		F9335004228001F400A679F4 /* GenActivityTypeField+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD8228001F300A679F4 /* GenActivityTypeField+CoreDataProperties.swift */; };
+		F9335005228001F400A679F4 /* GenActivityTypeField+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FD9228001F300A679F4 /* GenActivityTypeField+CoreDataClass.swift */; };
+		F9335006228001F400A679F4 /* Weather_Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDA228001F300A679F4 /* Weather_Day+CoreDataProperties.swift */; };
+		F9335007228001F400A679F4 /* Weather_Current+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDB228001F300A679F4 /* Weather_Current+CoreDataProperties.swift */; };
+		F9335008228001F400A679F4 /* Updated+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDC228001F300A679F4 /* Updated+CoreDataClass.swift */; };
+		F9335009228001F400A679F4 /* Created+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDD228001F300A679F4 /* Created+CoreDataClass.swift */; };
+		F933500A228001F400A679F4 /* Weather_Today+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDE228001F300A679F4 /* Weather_Today+CoreDataClass.swift */; };
+		F933500B228001F400A679F4 /* Notifications+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FDF228001F300A679F4 /* Notifications+CoreDataClass.swift */; };
+		F933500C228001F400A679F4 /* Created+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE0228001F300A679F4 /* Created+CoreDataProperties.swift */; };
+		F933500D228001F400A679F4 /* Weather_Today+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE1228001F300A679F4 /* Weather_Today+CoreDataProperties.swift */; };
+		F933500E228001F400A679F4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE2228001F300A679F4 /* User+CoreDataProperties.swift */; };
+		F933500F228001F400A679F4 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE3228001F300A679F4 /* Photo+CoreDataClass.swift */; };
+		F9335010228001F400A679F4 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE4228001F300A679F4 /* Photo+CoreDataProperties.swift */; };
+		F9335011228001F400A679F4 /* Activities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE5228001F300A679F4 /* Activities+CoreDataProperties.swift */; };
+		F9335012228001F400A679F4 /* Tags+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE6228001F300A679F4 /* Tags+CoreDataClass.swift */; };
+		F9335013228001F400A679F4 /* Accounts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE7228001F300A679F4 /* Accounts+CoreDataClass.swift */; };
+		F9335014228001F400A679F4 /* OfflinePhotos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE8228001F300A679F4 /* OfflinePhotos+CoreDataProperties.swift */; };
+		F9335015228001F400A679F4 /* Deleted+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FE9228001F300A679F4 /* Deleted+CoreDataProperties.swift */; };
+		F9335016228001F400A679F4 /* GenActivityType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FEA228001F300A679F4 /* GenActivityType+CoreDataProperties.swift */; };
+		F9335017228001F400A679F4 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FEB228001F300A679F4 /* User+CoreDataClass.swift */; };
+		F9335018228001F400A679F4 /* GenActivityType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FEC228001F300A679F4 /* GenActivityType+CoreDataClass.swift */; };
+		F9335019228001F400A679F4 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FED228001F300A679F4 /* Event+CoreDataProperties.swift */; };
+		F933501A228001F400A679F4 /* Weather_Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FEE228001F300A679F4 /* Weather_Day+CoreDataClass.swift */; };
+		F933501B228001F400A679F4 /* Ranch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FEF228001F400A679F4 /* Ranch+CoreDataProperties.swift */; };
+		F933501C228001F400A679F4 /* Updated+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FF0228001F400A679F4 /* Updated+CoreDataProperties.swift */; };
+		F933501D228001F400A679F4 /* OfflinePhotos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FF1228001F400A679F4 /* OfflinePhotos+CoreDataClass.swift */; };
+		F933501E228001F400A679F4 /* Deleted+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FF2228001F400A679F4 /* Deleted+CoreDataClass.swift */; };
+		F933501F228001F400A679F4 /* Notifications+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9334FF3228001F400A679F4 /* Notifications+CoreDataProperties.swift */; };
 		F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948B3B7227AB2210023BB4A /* AppDelegate.swift */; };
 		F948B3BD227AB2210023BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F948B3BB227AB2210023BB4A /* Main.storyboard */; };
 		F948B3C2227AB2220023BB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F948B3C1227AB2220023BB4A /* Assets.xcassets */; };
@@ -67,6 +112,51 @@
 		DF4278472139A637B0096508 /* Pods-AgraLogicSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwift.release.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwift/Pods-AgraLogicSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E2E8ECD0BF09ACDA269AD176 /* Pods-AgraLogicSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgraLogicSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgraLogicSwiftUITests/Pods-AgraLogicSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB3F5C74129E591BCD95F3D2 /* Pods_AgraLogicSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgraLogicSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91CD055228971F700EE6AFD /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		F9334FC8228001F300A679F4 /* Accounts+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accounts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FC9228001F300A679F4 /* Weather_Current+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Current+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FCA228001F300A679F4 /* Field+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Field+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FCB228001F300A679F4 /* Observations+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observations+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FCC228001F300A679F4 /* Weather_Hourly+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Hourly+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FCD228001F300A679F4 /* Ranch+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ranch+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FCE228001F300A679F4 /* Observations+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observations+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FCF228001F300A679F4 /* Field+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Field+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FD0228001F300A679F4 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FD1228001F300A679F4 /* Coordinates+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinates+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FD2228001F300A679F4 /* Coordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FD3228001F300A679F4 /* Tags+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FD4228001F300A679F4 /* Activities+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activities+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FD5228001F300A679F4 /* CDDWeather+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDDWeather+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FD6228001F300A679F4 /* CDDWeather+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDDWeather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FD7228001F300A679F4 /* Weather_Hourly+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Hourly+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FD8228001F300A679F4 /* GenActivityTypeField+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GenActivityTypeField+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FD9228001F300A679F4 /* GenActivityTypeField+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GenActivityTypeField+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FDA228001F300A679F4 /* Weather_Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FDB228001F300A679F4 /* Weather_Current+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Current+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FDC228001F300A679F4 /* Updated+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Updated+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FDD228001F300A679F4 /* Created+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Created+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FDE228001F300A679F4 /* Weather_Today+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Today+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FDF228001F300A679F4 /* Notifications+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notifications+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FE0228001F300A679F4 /* Created+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Created+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE1228001F300A679F4 /* Weather_Today+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Today+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE2228001F300A679F4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE3228001F300A679F4 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FE4228001F300A679F4 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE5228001F300A679F4 /* Activities+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activities+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE6228001F300A679F4 /* Tags+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FE7228001F300A679F4 /* Accounts+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accounts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FE8228001F300A679F4 /* OfflinePhotos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OfflinePhotos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FE9228001F300A679F4 /* Deleted+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deleted+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FEA228001F300A679F4 /* GenActivityType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GenActivityType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FEB228001F300A679F4 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FEC228001F300A679F4 /* GenActivityType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GenActivityType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FED228001F300A679F4 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FEE228001F300A679F4 /* Weather_Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather_Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FEF228001F400A679F4 /* Ranch+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ranch+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FF0228001F400A679F4 /* Updated+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Updated+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9334FF1228001F400A679F4 /* OfflinePhotos+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OfflinePhotos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FF2228001F400A679F4 /* Deleted+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deleted+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9334FF3228001F400A679F4 /* Notifications+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notifications+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F948B3B4227AB2210023BB4A /* AgraLogicSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgraLogicSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F948B3B7227AB2210023BB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F948B3BC227AB2210023BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +256,57 @@
 				38164CBD69A549689CF6C1D7 /* Pods_AgraLogicSwiftUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9334FC7228001F300A679F4 /* EntityClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F9334FC8228001F300A679F4 /* Accounts+CoreDataProperties.swift */,
+				F9334FC9228001F300A679F4 /* Weather_Current+CoreDataClass.swift */,
+				F9334FCA228001F300A679F4 /* Field+CoreDataProperties.swift */,
+				F9334FCB228001F300A679F4 /* Observations+CoreDataProperties.swift */,
+				F9334FCC228001F300A679F4 /* Weather_Hourly+CoreDataClass.swift */,
+				F9334FCD228001F300A679F4 /* Ranch+CoreDataClass.swift */,
+				F9334FCE228001F300A679F4 /* Observations+CoreDataClass.swift */,
+				F9334FCF228001F300A679F4 /* Field+CoreDataClass.swift */,
+				F9334FD0228001F300A679F4 /* Event+CoreDataClass.swift */,
+				F9334FD1228001F300A679F4 /* Coordinates+CoreDataClass.swift */,
+				F9334FD2228001F300A679F4 /* Coordinates+CoreDataProperties.swift */,
+				F9334FD3228001F300A679F4 /* Tags+CoreDataProperties.swift */,
+				F9334FD4228001F300A679F4 /* Activities+CoreDataClass.swift */,
+				F9334FD5228001F300A679F4 /* CDDWeather+CoreDataClass.swift */,
+				F9334FD6228001F300A679F4 /* CDDWeather+CoreDataProperties.swift */,
+				F9334FD7228001F300A679F4 /* Weather_Hourly+CoreDataProperties.swift */,
+				F9334FD8228001F300A679F4 /* GenActivityTypeField+CoreDataProperties.swift */,
+				F9334FD9228001F300A679F4 /* GenActivityTypeField+CoreDataClass.swift */,
+				F9334FDA228001F300A679F4 /* Weather_Day+CoreDataProperties.swift */,
+				F9334FDB228001F300A679F4 /* Weather_Current+CoreDataProperties.swift */,
+				F9334FDC228001F300A679F4 /* Updated+CoreDataClass.swift */,
+				F9334FDD228001F300A679F4 /* Created+CoreDataClass.swift */,
+				F9334FDE228001F300A679F4 /* Weather_Today+CoreDataClass.swift */,
+				F9334FDF228001F300A679F4 /* Notifications+CoreDataClass.swift */,
+				F9334FE0228001F300A679F4 /* Created+CoreDataProperties.swift */,
+				F9334FE1228001F300A679F4 /* Weather_Today+CoreDataProperties.swift */,
+				F9334FE2228001F300A679F4 /* User+CoreDataProperties.swift */,
+				F9334FE3228001F300A679F4 /* Photo+CoreDataClass.swift */,
+				F9334FE4228001F300A679F4 /* Photo+CoreDataProperties.swift */,
+				F9334FE5228001F300A679F4 /* Activities+CoreDataProperties.swift */,
+				F9334FE6228001F300A679F4 /* Tags+CoreDataClass.swift */,
+				F9334FE7228001F300A679F4 /* Accounts+CoreDataClass.swift */,
+				F9334FE8228001F300A679F4 /* OfflinePhotos+CoreDataProperties.swift */,
+				F9334FE9228001F300A679F4 /* Deleted+CoreDataProperties.swift */,
+				F9334FEA228001F300A679F4 /* GenActivityType+CoreDataProperties.swift */,
+				F9334FEB228001F300A679F4 /* User+CoreDataClass.swift */,
+				F9334FEC228001F300A679F4 /* GenActivityType+CoreDataClass.swift */,
+				F9334FED228001F300A679F4 /* Event+CoreDataProperties.swift */,
+				F9334FEE228001F300A679F4 /* Weather_Day+CoreDataClass.swift */,
+				F9334FEF228001F400A679F4 /* Ranch+CoreDataProperties.swift */,
+				F9334FF0228001F400A679F4 /* Updated+CoreDataProperties.swift */,
+				F9334FF1228001F400A679F4 /* OfflinePhotos+CoreDataClass.swift */,
+				F9334FF2228001F400A679F4 /* Deleted+CoreDataClass.swift */,
+				F9334FF3228001F400A679F4 /* Notifications+CoreDataProperties.swift */,
+			);
+			path = EntityClasses;
 			sourceTree = "<group>";
 		};
 		F948B3AB227AB2210023BB4A = {
@@ -289,6 +430,7 @@
 		F948B3F1227AB9130023BB4A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				F9334FC7228001F300A679F4 /* EntityClasses */,
 				F94D3114227C503E00266AA3 /* Agralogic.xcdatamodel */,
 				F94D3118227C5A3D00266AA3 /* CoreUtils.swift */,
 			);
@@ -333,6 +475,7 @@
 		F948B3FE227ACC600023BB4A /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F91CD055228971F700EE6AFD /* SplashPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -603,23 +746,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9335019228001F400A679F4 /* Event+CoreDataProperties.swift in Sources */,
+				F933500A228001F400A679F4 /* Weather_Today+CoreDataClass.swift in Sources */,
+				F9335017228001F400A679F4 /* User+CoreDataClass.swift in Sources */,
 				F948B3FA227AC5AE0023BB4A /* AccountVC.swift in Sources */,
 				F948B42A227AF85D0023BB4A /* LoginPresenter.swift in Sources */,
 				F948B3FC227AC9C20023BB4A /* SelectAccountListCell.swift in Sources */,
 				F94D3115227C503E00266AA3 /* Agralogic.xcdatamodel in Sources */,
+				F9334FFA228001F400A679F4 /* Observations+CoreDataClass.swift in Sources */,
 				F948B419227AE5130023BB4A /* TSMessageView.m in Sources */,
 				F948B42C227AFC070023BB4A /* Utility.swift in Sources */,
+				F9335011228001F400A679F4 /* Activities+CoreDataProperties.swift in Sources */,
 				F94D3117227C50A500266AA3 /* AccountPresenter.swift in Sources */,
+				F9335003228001F400A679F4 /* Weather_Hourly+CoreDataProperties.swift in Sources */,
+				F9335000228001F400A679F4 /* Activities+CoreDataClass.swift in Sources */,
+				F9334FF4228001F400A679F4 /* Accounts+CoreDataProperties.swift in Sources */,
 				F948B407227ACEC90023BB4A /* MBProgressHUD.m in Sources */,
+				F9335014228001F400A679F4 /* OfflinePhotos+CoreDataProperties.swift in Sources */,
+				F933501B228001F400A679F4 /* Ranch+CoreDataProperties.swift in Sources */,
+				F9335013228001F400A679F4 /* Accounts+CoreDataClass.swift in Sources */,
+				F9335018228001F400A679F4 /* GenActivityType+CoreDataClass.swift in Sources */,
+				F933501D228001F400A679F4 /* OfflinePhotos+CoreDataClass.swift in Sources */,
 				F948B3F5227ABBC50023BB4A /* Constant.swift in Sources */,
+				F9334FF5228001F400A679F4 /* Weather_Current+CoreDataClass.swift in Sources */,
+				F91CD056228971F700EE6AFD /* SplashPresenter.swift in Sources */,
+				F933500F228001F400A679F4 /* Photo+CoreDataClass.swift in Sources */,
 				F948B41C227AE5130023BB4A /* TSMessage.m in Sources */,
+				F933501E228001F400A679F4 /* Deleted+CoreDataClass.swift in Sources */,
+				F9335007228001F400A679F4 /* Weather_Current+CoreDataProperties.swift in Sources */,
+				F9335005228001F400A679F4 /* GenActivityTypeField+CoreDataClass.swift in Sources */,
+				F933500E228001F400A679F4 /* User+CoreDataProperties.swift in Sources */,
+				F9334FFE228001F400A679F4 /* Coordinates+CoreDataProperties.swift in Sources */,
+				F933501C228001F400A679F4 /* Updated+CoreDataProperties.swift in Sources */,
+				F9335012228001F400A679F4 /* Tags+CoreDataClass.swift in Sources */,
+				F9335001228001F400A679F4 /* CDDWeather+CoreDataClass.swift in Sources */,
+				F9334FF6228001F400A679F4 /* Field+CoreDataProperties.swift in Sources */,
 				F948B41A227AE5130023BB4A /* TSBlurView.m in Sources */,
 				F948B401227ACC7D0023BB4A /* SplashVC.swift in Sources */,
 				F948B41F227AE62A0023BB4A /* HexColors.m in Sources */,
+				F9335002228001F400A679F4 /* CDDWeather+CoreDataProperties.swift in Sources */,
+				F9335009228001F400A679F4 /* Created+CoreDataClass.swift in Sources */,
+				F9334FF7228001F400A679F4 /* Observations+CoreDataProperties.swift in Sources */,
+				F9334FF9228001F400A679F4 /* Ranch+CoreDataClass.swift in Sources */,
+				F9335004228001F400A679F4 /* GenActivityTypeField+CoreDataProperties.swift in Sources */,
+				F9334FFD228001F400A679F4 /* Coordinates+CoreDataClass.swift in Sources */,
+				F9335010228001F400A679F4 /* Photo+CoreDataProperties.swift in Sources */,
 				F94D3119227C5A3D00266AA3 /* CoreUtils.swift in Sources */,
+				F9335015228001F400A679F4 /* Deleted+CoreDataProperties.swift in Sources */,
+				F9334FFC228001F400A679F4 /* Event+CoreDataClass.swift in Sources */,
+				F933501A228001F400A679F4 /* Weather_Day+CoreDataClass.swift in Sources */,
 				F948B424227AEBA80023BB4A /* CommonApi.swift in Sources */,
+				F933500B228001F400A679F4 /* Notifications+CoreDataClass.swift in Sources */,
+				F9335008228001F400A679F4 /* Updated+CoreDataClass.swift in Sources */,
 				F948B3F3227ABAE50023BB4A /* LoginVC.swift in Sources */,
+				F9335006228001F400A679F4 /* Weather_Day+CoreDataProperties.swift in Sources */,
+				F933500D228001F400A679F4 /* Weather_Today+CoreDataProperties.swift in Sources */,
 				F948B3B8227AB2210023BB4A /* AppDelegate.swift in Sources */,
+				F9335016228001F400A679F4 /* GenActivityType+CoreDataProperties.swift in Sources */,
+				F9334FFF228001F400A679F4 /* Tags+CoreDataProperties.swift in Sources */,
+				F9334FF8228001F400A679F4 /* Weather_Hourly+CoreDataClass.swift in Sources */,
+				F933501F228001F400A679F4 /* Notifications+CoreDataProperties.swift in Sources */,
+				F933500C228001F400A679F4 /* Created+CoreDataProperties.swift in Sources */,
+				F9334FFB228001F400A679F4 /* Field+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

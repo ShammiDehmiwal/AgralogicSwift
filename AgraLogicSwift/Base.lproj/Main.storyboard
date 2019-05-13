@@ -388,7 +388,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-8p-egq">
                                 <rect key="frame" x="0.0" y="159" width="320" height="250"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6jw-VX-USH">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6jw-VX-USH">
                                         <rect key="frame" x="50" y="70" width="220" height="2"/>
                                         <color key="tintColor" red="0.044345408679999997" green="0.27819997070000002" blue="0.2529937625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
@@ -422,6 +422,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qlz-KB-mbb"/>
                     </view>
+                    <connections>
+                        <outlet property="lblProgressMsg" destination="S0l-8o-9zU" id="32l-x7-NWV"/>
+                        <outlet property="pvProgress" destination="6jw-VX-USH" id="x8M-io-gEl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEM-T1-jRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -50,9 +50,9 @@
         <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Coordinates" representedClassName="Coordinates" syncable="YES">
-        <attribute name="elevation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="elevation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Created" representedClassName="Created" syncable="YES">
         <attribute name="activity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
@@ -76,14 +76,14 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Field" representedClassName="Field" syncable="YES">
-        <attribute name="field_acreage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="field_acreage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="field_crop" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="field_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="field_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="field_summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ranch_id" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="coordinates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Coordinates" syncable="YES"/>
-        <relationship name="hasRanch" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Ranch" inverseName="hasFields" inverseEntity="Ranch" syncable="YES"/>
+        <relationship name="middle_point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coordinates" syncable="YES"/>
     </entity>
     <entity name="GenActivityType" representedClassName="GenActivityType" syncable="YES">
         <attribute name="activity_type" optional="YES" attributeType="String" syncable="YES"/>
@@ -211,7 +211,7 @@
         <attribute name="ranch_user_summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tags" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="activities" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Activities" syncable="YES"/>
-        <relationship name="hasFields" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Field" inverseName="hasRanch" inverseEntity="Field" syncable="YES"/>
+        <relationship name="hasFields" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Field" syncable="YES"/>
         <relationship name="observations" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Observations" syncable="YES"/>
         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" syncable="YES"/>
         <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weather_Today" syncable="YES"/>
@@ -287,18 +287,18 @@
         <element name="Accounts" positionX="-27" positionY="108" width="128" height="135"/>
         <element name="Activities" positionX="-18" positionY="117" width="128" height="525"/>
         <element name="CDDWeather" positionX="-27" positionY="135" width="128" height="118"/>
-        <element name="Coordinates" positionX="-27" positionY="108" width="128" height="88"/>
+        <element name="Coordinates" positionX="-27" positionY="108" width="128" height="30"/>
         <element name="Created" positionX="-27" positionY="135" width="128" height="105"/>
         <element name="Deleted" positionX="-27" positionY="135" width="128" height="75"/>
         <element name="Event" positionX="-18" positionY="108" width="128" height="178"/>
-        <element name="Field" positionX="-54" positionY="63" width="128" height="163"/>
+        <element name="Field" positionX="-54" positionY="63" width="128" height="165"/>
         <element name="GenActivityType" positionX="-27" positionY="135" width="128" height="120"/>
         <element name="GenActivityTypeField" positionX="-18" positionY="144" width="128" height="630"/>
         <element name="Notifications" positionX="-27" positionY="135" width="128" height="165"/>
         <element name="Observations" positionX="-27" positionY="135" width="128" height="390"/>
         <element name="OfflinePhotos" positionX="-27" positionY="135" width="128" height="150"/>
         <element name="Photo" positionX="-36" positionY="99" width="128" height="268"/>
-        <element name="Ranch" positionX="-63" positionY="-18" width="128" height="345"/>
+        <element name="Ranch" positionX="-63" positionY="-18" width="128" height="30"/>
         <element name="Tags" positionX="-27" positionY="135" width="128" height="90"/>
         <element name="Updated" positionX="-18" positionY="144" width="128" height="105"/>
         <element name="User" positionX="0" positionY="153" width="128" height="103"/>
